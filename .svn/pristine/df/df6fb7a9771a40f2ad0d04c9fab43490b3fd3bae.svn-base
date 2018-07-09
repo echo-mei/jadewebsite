@@ -1,0 +1,18 @@
+<!--加入我们-我们的团队-->
+
+<div class="our_team">
+    <h5 class="main-right-title">我们团队</h5>
+    <div class="team-work">
+        <p>我们满怀感恩的心情 :</p>
+        <img class="img0" src="img/pic/teamwork_01.png" alt="">
+    </div>
+    <div class="team-work">
+        <p>我们践行 :</p>
+        <img class="img1" src="img/pic/teamwork_02.jpg" alt="">
+    </div>
+    <div class="team-work">
+        <p>员工风采 :</p>
+        <img src="img/pic/teamwork_03.jpg" alt="">
+    </div>
+</div>
+

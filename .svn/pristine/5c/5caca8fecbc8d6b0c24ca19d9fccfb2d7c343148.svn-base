@@ -1,0 +1,28 @@
+<!--关于我们-服务网络-->
+<div class="container">
+    <div class="banner">
+        <img src="img/pic/aboutus_banner.jpg" alt="">
+    </div>
+    <div class="main">
+        <div class="main-wrap">
+            <div class="main-left-nav">
+                <ul>
+                    <h5>关于我们</h5>
+                    <li name="about_us_gsjs" class="active">
+                        <i></i>
+                        <span>公司介绍</span>
+                    </li>
+                    <li name="about_us_gsfz">
+                        <i></i>
+                        <span>公司发展</span>
+                    </li>
+                    <li name="about_us_fwwl">
+                        <i></i>
+                        <span>服务网络</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-right" id="main-right"></div>
+        </div>
+    </div>
+</div>

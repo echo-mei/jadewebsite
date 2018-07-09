@@ -1,0 +1,18 @@
+<!--商务伙伴-->
+
+<div class="business-partners">
+    <h5 class="main-right-title">商务伙伴</h5>
+    <div class="imgs">
+        <img src="img/pic/business_01.png" alt="">
+        <img src="img/pic/business_02.png" alt="">
+        <img src="img/pic/business_03.png" alt="">
+        <img src="img/pic/business_04.png" alt="">
+        <img src="img/pic/business_05.png" alt="">
+        <img src="img/pic/business_06.png" alt="">
+        <img src="img/pic/business_07.png" alt="">
+        <img src="img/pic/business_08.png" alt="">
+        <img src="img/pic/business_09.png" alt="">
+    </div>
+</div>
+
+

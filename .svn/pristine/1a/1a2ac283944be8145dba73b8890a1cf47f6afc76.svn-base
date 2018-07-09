@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>参会加执</title>
+
+
+    <script src="../js/font_size_autoAdapt.js"></script>
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+<div class="navbar-top" id="navbarTop">
+    <div class="navbar-header clearfix">
+        <a class="navbar-logo" href="meetingcontent.html"><img src="../images/homework_blue.png" ></a>
+        <!-- <a href="">
+            <button type="button" class="navbar-toggle"></button>
+        </a> -->
+    </div>
+    
+</div>
+
+<div class="index-main">
+    <div class="tabList-item apply-try-form" id="applyTryForm">
+        <h3 class="item-title" style="margin-top:3em">参会回执</h3>
+        <div class="form-item" id="item1">
+            <label><span class="aRed">*</span>参会人姓名: </label>
+            <input type="text" placeholder="请输入姓名" id="personName">
+        </div>
+
+        <div class="form-item" id="item2">
+            <label><span class="aRed">*</span>参会人手机: </label>
+            <input type="text" placeholder="请输入参会人手机号码" id="phone">
+        </div>
+        
+        
+        <!-- <div style="border:solid 1px blue;"  ><p>aaa</p></div> -->
+        <div class="form-item" id="item3">
+            <label><span class="aRed">*</span>验证码: </label>
+            <input type="text" placeholder="请输入验证码" id="verificationCode">
+            <a id="checkcode" onclick="createCode()"></a>
+        </div>
+        <div style="text-align:center">
+            <span id="warming" style="color:white ;margin-top:3rem ;font-size:12px; height:1em">z</span>
+            <span id="warming1" style="color:white ;margin-top:3rem ;font-size:12px; height:1em">z</span>
+            <span id="warming2" style="color:white ;margin-top:3rem ;font-size:12px; height:1em">z</span>
+        </div>
+        <button class="form-submit-btn" style="margin-top:2em" id="meeting_btn">提交</button>
+    </div>
+</div>
+
+<!-- <p class="copyright">Copyright 2017 © JadeFortune Technology All rights reserved</p> -->
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/wechat.js"></script>
+<script src="../js/check_code.js"></script>
+<style>
+    .tNull{
+        border-bottom: 1px solid red;
+    }
+</style>
+<script>
+    var btnflag = true;
+    $(function(){
+        
+        // var re_name = /^[\u4E00-\u9FA5A-Za-z]+$/;
+        var re_name = /[@#\$%\^&\*\d]+/g;
+        // var re_name =/^[0-9]+$/;
+        var re_phone = /^1[345789]\d{9}$/;
+        createCode();
+
+        $("#personName").focus(function(){
+            // var name_text = $(this).val(); 
+            if($("#personName").val()==="")
+            {
+                $("#warming").text("姓名不能为空").css("color","red");
+                $("#item1").css("border-bottom","1px solid red");
+                btnflag = false;
+            }
+            // else{
+            //     $("#warming").text("warming").css('color','white');
+            //     $("#item1").css("border-bottom","1px solid #e2e2e2");   
+            // }
+        });
+        $("#phone").focus(function(){
+            // var name_text = $(this).val(); 
+            if($("#phone").val()==="")
+            {
+                $("#warming1").text("手机号码不能为空").css("color","red");
+                $("#item2").css("border-bottom","1px solid red");
+                btnflag = false;
+            }
+            // else{
+            //     $("#warming").text("warming").css('color','white');
+            //     $("#item1").css("border-bottom","1px solid #e2e2e2");   
+            // }
+        });
+        $("#personName").keyup(function(){
+            var name_text = $(this).val();
+            if($("#personName").val()=="")
+            {
+                $("#warming").text("姓名不能为空").css("color","red");
+                $("#item1").css("border-bottom","1px solid red");
+                btnflag = false;
+            }
+            
+            else{
+                if(re_name.test(name_text)){
+                    $("#item1").css("border-bottom","1px solid red");
+                    $("#warming").text("姓名不能包含数字").css("color","red");
+                    btnflag = false;
+                }
+                else{
+
+                    $("#warming").text("warming").css('color','white');
+                    $("#item1").css("border-bottom","1px solid #e2e2e2");
+                     btnflag = true;
+                }
+            }
+        });
+        $("#phone").keyup(function(){
+            var phone_text = $(this).val();
+            if($("#phone").val()==="")
+            {
+                $("#warming1").text("电话不能为空").css("color","red");
+                $("#item2").css("border-bottom","1px solid red");
+                btnflag = false;                
+                // $("#meeting_btn").attr("disabled",true).css('background-color','grey');
+                
+            }
+            else
+            {
+                if(!re_phone.test(phone_text)){
+                    $("#warming1").text("请输入正确的手机号码").css("color","red");
+                    $("#item2").css("border-bottom","1px solid red");
+                    btnflag = false;
+                    
+                }
+                else{
+                    
+                    $("#warming1").text("a").css('color','white');
+                    $("#item2").css("border-bottom","1px solid #e2e2e2");
+                    btnflag = true;
+                }
+            }
+        });
+        $("#verificationCode").keyup(function(){
+            if($("#verificationCode").val()==="")
+            {
+                $("#warming2").text("验证码不能为空").css("color","red");
+                $("#item3").css("border-bottom","1px solid red");
+                btnflag = false;
+                
+                // $("#meeting_btn").attr("disabled",true).css('background-color','grey');
+                
+            }
+            else
+            {
+                // if($.trim(verificationCode.toUpperCase()) != localStorage.getItem("checkcode")){
+                //     $("#warming2").text("验证码错误").css("color","red");
+                //     $("#item3").css("border-bottom","1px solid red");
+                // }
+                $("#warming2").text("").css('color','white');
+                $("#item3").css("border-bottom","1px solid #e2e2e2");
+                btnflag = true;
+                
+                
+            }
+        });
+        $("#verificationCode").focus(function(){
+            if($("#verificationCode").val()==="")
+            {
+                $("#warming2").text("验证码不能为空").css("color","red");
+                $("#item3").css("border-bottom","1px solid red");
+                btnflag = false;
+                
+                // $("#meeting_btn").attr("disabled",true).css('background-color','grey');
+                
+            }
+            else
+            {
+                // if($.trim(verificationCode.toUpperCase()) != localStorage.getItem("checkcode")){
+                //     $("#warming2").text("验证码错误").css("color","red");
+                //     $("#item3").css("border-bottom","1px solid red");
+                // }
+                $("#warming2").text("").css('color','white');
+                $("#item3").css("border-bottom","1px solid #e2e2e2");
+                btnflag = true;
+                
+                
+            }
+        });
+       
+        // $("#phone").keyup(function(){
+        //     $("#warming1").text("").css('color','white');
+        //     $("#phone").css("border","none");
+        //     if($("#verificationCode").val()!=""&&$("#phone").val()!=""&&$("#personName").val()!=""){
+
+        //     $("#meeting_btn").attr("disabled",false).css('background-color','#017ae3');;
+        //         }
+            
+        // });
+        // $("#verificationCode").keyup(function(){
+        //     $("#warming2").text("").css('color','white');
+        //     $("#verificationCode").css("border","none");
+        //     if($("#verificationCode").val()!=""&&$("#phone").val()!=""&&$("#personName").val()!=""){
+
+        //             $("#meeting_btn").attr("disabled",false).css('background-color','#017ae3');;
+        //     }
+        // });
+        // $("#personName").focus(function(){
+        //     $("#item1").css("border-bottom","1px solid #e2e2e2");
+        // });
+        // $("#phone").focus(function(){
+        //     $("#item2").css("border-bottom","1px solid #e2e2e2");
+        // });
+        // $("#verificationCode").focus(function(){
+        //     $("#item3").css("border-bottom","1px solid #e2e2e2");
+        // });
+        // if(btnflag===true)
+        // {
+        //     $("#meeting_btn").attr("disabled",false).css('background-color','#017ae3');
+        // }
+        // else
+        // {
+        //     $("#meeting_btn").attr("disabled",true).css('background-color','grey');
+        // }
+    });
+</script>
+</body>
+</html>

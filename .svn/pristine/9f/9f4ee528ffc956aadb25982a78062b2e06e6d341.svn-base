@@ -1,0 +1,97 @@
+<div class="modal-box modal-form-submit">
+   <!-- <form id=""  method="post" name="" action="postEmail" > -->
+    <div class="md-header">
+        <h1>试用申请表<span class="required">*为必填项</span><span class="close-popdown md-close">×</span></h1>
+    </div>
+    <div class="md-body">
+        <table>
+            <tr>
+                <td>软件名称：</td>
+                <td id="softName"></td>
+            </tr>
+            <tr >
+                <td><span>*</span>申请人姓名：</td>
+                <td><input type="text" class="require" id="personName" />
+                    <span class="prompt">
+                       申请人姓名不能为空
+                    </span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+
+            </tr>
+            <tr>
+                <td>QQ/微信：</td>
+                <td><input type="text" id="qq" /></td>
+            </tr>
+            <tr>
+                <td><span>*</span>联系人电话：</td>
+                <td class="phone">
+                    <input type="text" id="phone" class="require" />
+                    <span class="prompt">
+                        联系电话不能为空
+                    </span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><span>*</span>邮箱：</td>
+                <td class="email">
+                    <input type="text" id="email" class="require" />
+                    <span class="prompt">
+                        邮箱不能为空
+                    </span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><span>*</span>单位名称：</td>
+                <td>
+                    <input type="text"  class="require" id="businessName" />
+                    <span class="prompt">
+                        单位名称不能为空
+                    </span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><span>*</span>单位地址：</td>
+                <td>
+                    <input type="text"  class="require" id="businessAddress" />
+                    <span class="prompt">
+                        单位地址不能为空
+                    </span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+             <tr>
+                <td><span>*</span>验证码：</td>
+                <td class="verificationCode">
+                    <input type="text"  class="require" id="verificationCode" />
+                    <a id="checkcode" onclick="createCode()"></a>
+                    <span class="prompt">
+                        验证码不能为空
+                    </span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <button  class="form-submit">提交</button></td>
+            </tr>
+        </table>
+    </div>
+   <!-- </form> -->
+</div>
+
+<script> 
+    $(function(){
+        $('#softName').html(localStorage.getItem("tit"));
+        createCode();
+    })
+</script>

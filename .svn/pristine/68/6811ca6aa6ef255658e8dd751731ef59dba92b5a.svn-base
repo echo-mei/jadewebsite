@@ -1,0 +1,67 @@
+<div class="tpl-block" id="productSystem<?php echo $systemId; ?>" data-systemId="<?php echo $systemId; ?>">
+                <div class="am-g">
+                    <div class="am-u-sm-12 am-u-md-6">
+                        <div class="am-btn-toolbar">
+                            <div class="am-btn-group am-btn-group-xs">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="am-u-sm-12 am-u-md-3">
+                        <div class="am-form-group">
+                            <select id="searcher" data-am-selected="{btnSize: 'sm'}">
+                                <option value=" ">=请选择查询条件=</option>
+                                <option value="name">姓名</option>
+                                <option value="phone">联系电话</option>
+                                <option value="unit">单位名称</option>
+                                <option value="applyDate">申请日期</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="am-u-sm-12 am-u-md-3">
+                        <div class="am-input-group am-input-group-sm">
+                            <input id="searcher-input" type="text" class="am-form-field">
+                            <span class="am-input-group-btn">
+<button id="searcher-btn" class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search"
+        type="button"></button>
+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="am-g">
+                    <div class="am-u-sm-12">
+                        <form class="am-form" id="productSystemGrid">
+                        <div class="table-wrap">
+                            <table class="am-table am-table-striped am-table-hover table-main">
+                                <thead>
+                                <tr>
+                                    <th width="20"><input type="checkbox" class="tpl-table-fz-check"></th>
+                                    <th width="40">ID</th>
+                                    <th width="100">申请来源</th>
+                                    <th width="100">姓名</th>
+                                    <th width="150">联系电话</th>
+                                    <th width="150">单位名称</th>
+                                    <th width="160">申请日期</th>
+                                    <th width="120">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                            </div>
+                            <div class="am-cf">
+                                <div class="am-fr">
+                                    <ul class="am-pagination tpl-pagination">
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <script src="js/productApply/productSystem.js"></script>
+            <script>
+            buildGrid($('#productSystem<?php echo $systemId; ?>'));
+            </script>

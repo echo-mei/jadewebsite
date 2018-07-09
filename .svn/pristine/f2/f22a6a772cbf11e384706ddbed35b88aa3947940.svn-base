@@ -1,0 +1,24 @@
+<!--加入我们-我们的团队-->
+<div class="container">
+    <div class="banner">
+        <img src="img/pic/teamwork_banner.jpg" alt="">
+    </div>
+    <div class="main">
+        <div class="main-wrap">
+            <div class="main-left-nav">
+                <ul>
+                    <h5>加入我们</h5>
+                    <li name="jion_us_ourteam" class="active">
+                        <i></i>
+                        <span>我们团队</span>
+                    </li>
+                    <li name="jion_us_recruitment">
+                        <i></i>
+                        <span>招贤纳士</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-right" id="main-right"></div>
+        </div>
+    </div>
+</div>

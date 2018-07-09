@@ -1,0 +1,19 @@
+<!--软件服务-软件资源外包-->
+<div class="content case">
+    <h1 class="main-right-title">软件资源外包</h1>
+    <h2><img src="img/pic/software_wb01.png">技术技能</h2>
+        <ul>
+            <li>操作系统：Windows, AIX, HP-UX, Linux, iOS, Android, OS/400, MVS/VSE</li>
+            <li>数据库：Oracle(RAC), SQL Server(Clustering), DB2, Sybase, MySQL, xBase</li>
+            <li>编程语言：Java(J2SE, J2EE, JSP, Servlet), C/C++, .Net, VC/C++, VB, ASP, C＃, PHP, Delphi, PB, RPG, CICS/Cobol, Flex, python, swift, object-c</li>
+            <li>通信协议：TCP/IP, HTTP, IBM MQ, IPX/SPX, SNA, Corba</li>
+            <li>应用软件平台：Salesforce, Siebel, SAP, Oracle ERP, jBPM, BO, BIEE+, Cognos, Reporting Service, Crystal Report, DataStage, Informatica, JASPERReport, Birt, Windchill(PDMLink/ProjectLink/MPMLink), Arbortext</li>
+            <li>系统平台：WebLogic, Websphere, Visibroker, JMS, Jrun, Struts, Spring, Hibernate, iBatis, Ajax, Flex, Sharepoint, EOS, SOA, docker, kubernates, nginx, nodejs, redis</li>
+            <li> 测试工具：WinRunner, LoadRunner, QTP, JMeter, JUnit, TD</li>
+            <li>工具：Power Designer, Rose, Visio, Eclipse, IDEA</li>
+        </ul>
+    <h2><img src="img/pic/software_wb02.png">行业领域</h2>
+    <ul>
+        <li>  政府、电信、金融、电子商务、航空、CRM、商业智能</li>
+    </ul>
+</div>

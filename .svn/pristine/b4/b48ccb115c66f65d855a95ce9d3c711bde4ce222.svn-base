@@ -1,0 +1,104 @@
+create database if not exists `jadewebsite` default charset utf8 collate utf8_general_ci;
+
+use jadewebsite;
+
+create table `jadewebsite_role` (
+	`id` int unsigned primary key auto_increment comment '主键',
+	`rolename` varchar(20) comment '角色名',
+	`defaultMenuId` int unsigned comment '默认展示菜单Id'
+);
+
+create table `jadewebsite_admin` (
+	`id` int unsigned primary key auto_increment comment '主键',
+	`username` varchar(20) comment '管理员名称，唯一',
+	`password` varchar(64) comment '管理员密码',
+	`roleId` int unsigned comment '角色ID'
+);
+
+create table `jadewebsite_menu` (
+	`id` int unsigned primary key auto_increment comment '主键',
+	`text` varchar(20) comment '菜单文本',
+	`href` varchar(255) comment '链接',
+	`parentId` int unsigned comment '父ID'
+);
+
+create table `jadewebsite_role_power` (
+	`roleId` int unsigned comment '角色ID',
+	`menuId` int unsigned comment '菜单ID'
+);
+
+create table `jadewebsite_system` (
+	`id` int unsigned primary key auto_increment comment '主键',
+	`systemName` varchar(255) comment '系统名称'
+);
+
+create table `jadewebsite_product_apply` (
+	`id` int unsigned primary key auto_increment comment '主键',
+	`productFrom` varchar(20) comment '申请来源',
+	`name` varchar(20) comment '姓名',
+	`qqWechat` varchar(20) comment 'QQ/Wechat',
+	`phone` varchar(20) comment '联系电话',
+	`email` varchar(20) comment '邮箱',
+	`unit` varchar(100) comment '单位名称',
+	`unitAddress` varchar(255) comment '单位地址',
+	`applyDate` datetime comment '申请日期',
+	`isRead` Tinyint(1) unsigned comment '是否已读',
+	`systemId` int unsigned comment '系统id'
+);
+
+create table `jadewebsite_recruit_apply` (
+	`id` int unsigned primary key auto_increment comment '主键',
+	`recruitFrom` varchar(20) comment '申请来源',
+	`deliverDate` datetime comment '申请日期',
+	`position` varchar(20) comment '应聘岗位',
+	`imgName` varchar(50) comment '照片名称',
+	`workDate` datetime comment '到岗日期',
+	`name` varchar(20) comment '姓名',
+	`sex` Tinyint(1) unsigned comment '性别',
+	`phone` Varchar(20) comment '手机',
+	`school` varchar(255) comment '毕业院校',
+	`education` Varchar(20) comment '学历',
+	`nativePlace` varchar(255) comment '籍贯',
+	`currentAddress` varchar(255) comment '现居地',
+	`email` varchar(50) comment '邮箱',
+	`qq` varchar(20) comment 'qq',
+	`major` varchar(255) comment '学位',
+	`graduationDate` datetime comment '毕业时间',
+	`englishLevel` varchar(50) comment '英语等级',
+	`computerLevel` varchar(50) comment '计算机等级',
+	`certificate` text comment '证书',
+	`associationActivity` text comment '在校经历',
+	`practiceExperience` text comment '工作实习经历',
+	`hobbies` text comment '兴趣爱好',
+	`selfEvaluation` text comment '自我评价',
+	`isRead` Tinyint(1) unsigned comment '是否已读'
+);
+
+CREATE TABLE `jadewebsite_recruit_accessory` (
+  `id` int unsigned primary key auto_increment comment '主键',
+  `position` varchar(20) comment '应聘岗位',
+  `deliverDate` datetime comment '申请日期',
+  `resumeNewName` varchar(50) comment '简历名称',
+  `resumeOriginalName` varchar(50) comment '简历原名称',
+  `isRead` Tinyint(1) unsigned comment '是否已读'
+);
+
+create table `jadewebsite_login_log` (
+	`id` int unsigned primary key auto_increment comment '主键',
+	`ip` varchar(50) comment '登陆IP',
+	`loginTime` datetime comment '登陆时间',
+	`adminId` int unsigned comment '登陆管理员id'
+);
+
+create table `jadewebsite_recruit_manage` (
+	`id` int unsigned primary key auto_increment comment '主键',
+	`publishDate` datetime comment '发布日期',
+	`positionName` varchar(20) comment '职位名称',
+	`positionRequire` text comment '职责及要求',
+	`positionAuditor` varchar(20) DEFAULT '审核人' comment '职位审核人',
+	`depart` varchar(20) comment '部门',
+	`number` varchar(10) comment '招聘人数',
+	`address` varchar(20) comment '地点',
+	`status` Tinyint(1) unsigned comment '状态'
+);
+

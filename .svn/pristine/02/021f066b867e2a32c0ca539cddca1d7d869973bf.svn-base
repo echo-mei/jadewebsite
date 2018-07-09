@@ -1,0 +1,39 @@
+<?php 
+header('content-type:text/html;charset=utf-8');
+require_once '../../include.php';
+include_once '../../common/upload.func.php';
+
+$method = $_REQUEST['method'];
+if($method=='listResumeAccessory') {
+    $start = $_GET['start'];
+    $limit = $_GET['limit'];
+    $sql = "select * from jadewebsite_recruit_accessory where 1=1";
+    if($_GET['position']!="") { $sql .= " and position like '%{$_GET['position']}%'"; }
+    if($_GET['deliverDate']!="") { $sql .= " and workDate = '{$_GET['workDate']}'"; }
+    if($_GET['isRead']!="") { $sql .= " and isRead = '{$_GET['isRead']}'"; }
+    $sql .= " order by isRead";
+    $count = getResultNum($sql);
+    $applys = fetchAll($sql." limit {$start},{$limit}");
+    echo json_encode([total=>$count, rows=>$applys]);
+}elseif($method=='setRead') {
+     $id = $_POST['id'];
+     update("jadewebsite_recruit_accessory", [isRead=>1], "id = {$id}");
+     $status = "success";
+     echo json_encode([status=>$status]);
+ }elseif($method=='addResumeAccessory') {
+    date_default_timezone_set("PRC");
+    //获取上传简历后经程序重新更名后的名称
+    $allowExt=array('doc','docx','pdf','wps');
+    $newName=uploadFile('doc',$allowExt,5242880,false);
+
+    $data = [
+        position => $_POST['position'],
+        deliverDate => date("Y-m-d H:i:sa"),
+        resumeNewName => $newName[0]['name'],
+        resumeOriginalName => $_FILES['file']['name'],
+        isRead => 0
+    ];
+    insert("jadewebsite_recruit_accessory", $data);
+    echo json_encode([success=>true]);
+}
+

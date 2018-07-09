@@ -1,0 +1,73 @@
+
+<!--软件服务-应用软件开发-->
+
+<div class="main-right-cont">
+    <h1 class="main-right-title">应用软件开发</h1>
+    <ul class="img-text-updown i-ss-yyrj">
+        <li>
+            <div class="it-img"><img src="img/pic/software_yy01.png" height="125" width="125"/></div>
+            <ul class="it-text" style="height: 236px;">
+                <li class="it-text-li"><i></i><span>证券咨询交流平台</span></li>
+                <li class="it-text-li"><i></i><span>财富管理系统</span></li>
+                <li class="it-text-li"><i></i><span>ATM处理和控制系统</span></li>
+                <li class="it-text-li"><i></i><span>证券交易系统</span></li>
+                <li class="it-text-li"><i></i><span>财险理赔系统</span></li>
+                <li class="it-text-li"><i></i><span>消费卡服务系统</span></li>
+            </ul>
+        </li>
+        <li>
+            <div class="it-img"><img src="img/pic/software_yy02.png" height="125" width="125"/></div>
+            <ul class="it-text" style="height: 236px;">
+                <li class="it-text-li"><i></i><span>移动BOSS</span></li>
+                <li class="it-text-li"><i></i><span>移动视讯工程管理系统</span></li>
+                <li class="it-text-li"><i></i><span>移动视讯增值服务代理管理系统</span></li>
+                <li class="it-text-li"><i></i><span>广电应急指挥系统</span></li>
+            </ul>
+        </li>
+        <li class="mr0">
+            <div class="it-img"><img src="img/pic/software_yy03.png" height="125" width="125"/></div>
+            <ul class="it-text" style="height: 236px;">
+                <li class="it-text-li"><i></i><span>SHKF CRM系统(Salesforce)</span></li>
+                <li class="it-text-li"><i></i><span>联邦快递全国客户业务服务系统</span></li>
+                <li class="it-text-li"><i></i><span>深圳发展银行零售银行客户关系管理系统（Siebel）</span></li>
+                <li class="it-text-li"><i></i><span>保险行业电话营销系统</span></li>
+            </ul>
+        </li>
+        <li>
+            <div class="it-img"><img src="img/pic/software_yy04.png" height="125" width="125"/></div>
+            <ul class="it-text" style="height: 164px;">
+                <li class="it-text-li"><i></i><span>规划数字信息资源整合系统</span></li>
+                <li class="it-text-li"><i></i><span>政府人才奖励申报审批系统</span></li>
+                <li class="it-text-li"><i></i><span>科技项目申报审批系统</span></li>
+            </ul>
+        </li>
+        <li>
+            <div class="it-img"><img src="img/pic/software_yy05.png" height="125" width="125"/></div>
+            <ul class="it-text" style="height: 164px;">
+                <li class="it-text-li"><i></i><span>土地流转管理系统</span></li>
+                <li class="it-text-li"><i></i><span>农残检测监管系统</span></li>
+                <li class="it-text-li"><i></i><span>兽药ERP系统</span></li>
+                <li class="it-text-li"><i></i><span>农业专家系统</span></li>
+            </ul>
+        </li>
+        <li class="mr0">
+            <div class="it-img"><img src="img/pic/software_yy06.png" height="125" width="125"/></div>
+            <ul class="it-text" style="height: 164px;">
+                <li class="it-text-li"><i></i><span>机场旅检系统</span></li>
+                <li class="it-text-li"><i></i><span>机场值机统计报表系统</span></li>
+                <li class="it-text-li"><i></i><span>自助值机平台</span></li>
+                <li class="it-text-li"><i></i><span>地勤车监控系统</span></li>
+            </ul>
+        </li>
+        <li>
+            <div class="it-img"><img src="img/pic/software_yy07.png" height="125" width="125"/></div>
+            <ul class="it-text">
+                <li class="it-text-li"><i></i><span>电子商务系统</span></li>
+                <li class="it-text-li"><i></i><span>Portal应用开发</span></li>
+                <li class="it-text-li"><i></i><span>网站开发</span></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+

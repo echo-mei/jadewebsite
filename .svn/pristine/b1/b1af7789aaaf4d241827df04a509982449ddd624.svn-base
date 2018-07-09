@@ -1,0 +1,48 @@
+/**
+ * Created by chenjie on 2017/5/6.
+ */
+$(document).ready(function() {
+    $(window).scroll(function(){
+        fixed_left_nav($('.main-left-nav'));
+        $('body').scroll_right({
+            'oLeft': ['div.main-left-nav>ul>li','div.main-left-nav>ul>li','div.main-left-nav>ul>li'],
+            'oRight': ['div.main-right>div>div>h1','div.main-right>div>h2>a','div.href-id'],
+            'activeClass': 'active'
+        });
+    });
+    $(document).on('click','.main-left-nav li',function(){
+        fixed_left_nav($('.main-left-nav'));
+    });
+
+   function fixed_left_nav(obj){
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft;
+        offsetTopLeftNav = $('.banner').height()+86-58;
+
+        if(offsetTopLeftNav<scrollTop){
+            obj.css({
+                'position': 'fixed',
+                'top': '0px',
+                'left': ($(document.body).width()-1200)/2-scrollLeft+'px'
+            });
+        }else{
+            obj.css({
+                'position': 'relative',
+                'top': '-58px',
+                'left': '0px'
+            });
+        }
+        if (obj.length>0){
+            var objToBottomHeight = $(document).outerHeight() - ($(obj).offset().top + $(obj).outerHeight());
+            var footerHeight = $(".footer").outerHeight(true);
+            var leftNavTop = $(window).height() - ($(obj).outerHeight(true) +$(".footer").outerHeight(true) );
+            if (objToBottomHeight <  footerHeight){
+                obj.css({
+                    'position': 'fixed',
+                    'top': leftNavTop
+                });
+            }
+        }
+
+   }
+});

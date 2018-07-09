@@ -1,0 +1,19 @@
+<div class="modal-box modal-form-success">
+        <div class="md-header">
+            <h1>申请表 <span class="md-close close-popdown">×</span></h1>
+        </div>
+        <div class="md-body md-body-p ">
+            <img class="yes" src="img/pic/yes.png">
+            <p class="text-green">您的申请提交成功！！！</p>
+            <p>我们将会在3个工作日内，审核您的申请</p>
+            <p>如果通过，我们将会通过<span class="bold">电话、邮箱</span>的方式联系您</p>
+        </div>
+        <div class="confirm">
+            <button class="close-popdown">确认</button>
+        </div>
+</div>
+<script>
+    $(function(){
+        $('.title').html(localStorage.getItem("tit"))
+    })
+</script>

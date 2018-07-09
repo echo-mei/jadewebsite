@@ -1,0 +1,192 @@
+/*云服务左右布局(图片和信息隔行左右替换)*/
+.cs-content-width40{
+    width:40%;
+    text-align: center;
+    margin: auto;
+}
+.ca-content-width50{
+    width:50%;
+    text-align: center;
+    margin: auto;
+}
+.cs-item-box{
+    text-align:center;
+    margin-bottom:50px;
+}
+.cs-picture-centre{
+    text-align:center;
+    margin:auto;
+}
+.cs-img-left{
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width:58%;
+    height: auto;
+    line-height: 1.42857143;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    float: left;
+}
+.cs-img-left img{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width:100%;
+}
+.cs-title{
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    top: 187px;
+    line-height: 34px;
+}
+.cs-cn{
+    font-size: 24px;
+    color: #3d4a44;
+    font-weight:600;
+}
+.cs-en{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #aaa;
+}
+.cs-height50{
+    height: 50px;
+    overflow: hidden;
+    clear: both;
+}
+.cs-height30{
+    height: 30px;
+    overflow: hidden;
+    clear: both;
+}
+.cs-height10{
+    height: 10px;
+    overflow: hidden;
+    clear: both;
+}
+.cs-content{
+    -o-transition-delay: .2s;
+    -ms-transition-delay: .2s;
+    -moz-transition-delay: .2s;
+    transition-delay: .2s;
+    opacity: 1;
+    margin-top: 0;
+}
+.cs-character-right{
+    float: left;
+    width:41%;
+    text-align:left;
+    margin-left:1%;
+}
+.cs-character-rc{
+    /*padding-left: 15px;*/
+    position:relative;
+}
+.cs-character-rc .apply-btn{
+	position: absolute;
+    left:0;
+	margin-top:10px;
+}
+.cs-cr-content{
+    line-height:2.5;
+    font-size:16px;
+}
+.cs-box{
+    display:block;
+    position:relative;
+    margin:auto;
+    width:80%;
+    height:408px;
+}
+.cs-img-width img{
+    width:100%;
+}
+.cs-text-align-left{
+    text-align: left;
+}
+/*云服务左右布局(图片和信息隔行左右替换)结束*/
+/*公司优势*/
+.ca-cn{
+    font-size: 24px;
+    color: #3d4a44;
+    font-weight:600;
+    text-align: left;
+}
+.ca49-img-left{
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width:49%;
+    height: auto;
+    line-height: 1.42857143;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    float: left;
+}
+.ca49-character-right{
+    float: left;
+    width: 49%;
+    text-align: left;
+    margin-left: 1%;
+}
+.ca-item-box{
+    /*width: 50%;*/
+    text-align: center;
+    margin: auto;
+}
+.ca27-img-left{
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 28%;
+    height: auto;
+    line-height: 1.42857143;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    float: left;
+}
+.ca71-character-right{
+    float: left;
+    width: 71%;
+    text-align: left;
+    margin-left: 1%;
+}
+.cs-img-pps{
+    width:100%;
+    height:100%;
+    vertical-align: middle;
+}
+.cs-img-jlw{
+	width:80%!important;
+}
+.ca-img-dieDai{
+    margin-right:12%;
+}
+.ca-img-mid{
+    padding-left: 15%;
+}
+.cs-main{
+    width:100%;
+    float:left;
+}
+.ca-main{
+    width:100%;
+    float:left;
+}
+.small-dot-bg{
+    border-radius: 50%;
+    width:5px;
+    height:5px;
+    background:#017ae3;
+    display: inline-block;
+    margin-right:1%;
+    position: relative;
+    top: -3px;
+}
+
+/*公司优势结束*/

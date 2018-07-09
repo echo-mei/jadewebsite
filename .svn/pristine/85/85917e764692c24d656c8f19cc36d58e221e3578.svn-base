@@ -1,0 +1,73 @@
+<!--加入我们-招贤纳士-->
+<h2 class="main-right-title">招贤纳士</h2>
+<div class="z-table" id="join-table">
+	<table width="100%">
+		<thead>
+			<tr>
+				<th width="15%">职位名称</th>
+				<th width="30%">职位要求</th>
+				<th width="14%">部门</th>
+				<th width="14%">招聘人数</th>
+				<th width="17%">地点</th>
+				<th width="10%">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+</div>
+<div class="z-bottom">
+	我们真诚地邀请有志于中国应用软件服务的能人贤士加盟，和我们一起发展，一起收获！
+	<div>
+		<a class="z-mail" href="mailto:company@jadefortune.com.cn">请联系我们：company@jadefortune.com.cn</a>
+	</div>
+</div>
+<h1 class="clean"></h1>
+
+<script>
+	$(function () {
+        //招聘申请-点击申请
+        $(document).on('click', '.z-table .apply-btn', function () {
+            localStorage.removeItem("applyJob");
+            var applyJob = $(this).closest("tr").find("td:eq(0)").text();
+            localStorage.setItem("applyJob", applyJob);
+        });
+
+	    grid();
+        function grid() {
+            var data = {
+                start: 0,
+                limit: null
+            };
+			$.ajax({
+                url: '../../admin/data/recruitManage/recruitManageAction.php?method=listRecruitManage',
+                type: 'get',
+                data: data,
+                dataType: 'json',
+                success: function(resp) {
+                    $('#join-table table tbody').empty();
+                    resp.rows&&resp.rows.forEach(function(v, i) {
+                        if (v.status == "1"){
+                            var $tr = $(
+                                '<tr>'+
+                                '<td>'+(v.positionName?v.positionName:'')+'</td>'+
+                                '<td class="hide">'+(v.positionRequire?v.positionRequire:'')+
+                                '<div class="show"><span></span>'+(v.positionRequire?v.positionRequire:'').replace(/\n/g,"<br/>")+'</span></div></td>'+
+                                '<td>'+(v.depart?v.depart:'')+'</td>'+
+                                '<td>'+(v.number?v.number:'')+'</td>'+
+                                '<td>'+(v.address?v.address:'')+'</td>'+
+                                '<td><button href="modal/recruitment_choice.html" class="apply-btn show-modal">申请</button></td>'+
+                                '</tr>'
+                            );
+                            $('#join-table table tbody').append($tr);
+						}
+                    });
+                }
+            });
+        }
+    });
+</script>
+
+
+
+

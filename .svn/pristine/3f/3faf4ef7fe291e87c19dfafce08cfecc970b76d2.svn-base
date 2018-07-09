@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>云服务</title>
+    <meta http-equiv=Content-Type content="text/html;" />
+    <meta content="软件开发，系统集成，云服务，应用软件开发，行业软件开发，软件资源外包，教学管理，企业移动管理，供应链质量管理，政府OA" name="keywords" />
+    <meta name="description" content="中国领先的应用软件服务供应商，千万元级软件开发项目的领军人物，美国归来的管理专才和软件专家，十几年软件开发经验的项目经理和系统架构师，政府、医疗、教育、金融、航空、电信&广电、物流、零售、CRM、制造业等行业专家" />
+    <meta content="版权所有:深圳市嘉德永丰开发科技股份有限公司" name="copyright" />
+    <meta content="MSHTML 6.00.2900.3492" name="GENERATOR" />
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="../favicon.ico" type="image/x-icon" />
+
+    <script src="../js/font_size_autoAdapt.js"></script>
+    <link rel="stylesheet" href="../css/layout.css">
+<body>
+<div class="navbar-top" id="navbarTop">
+    <div class="navbar-header clearfix">
+        <a class="navbar-logo" href="#"><img src="../images/navbar_top_logo.png"></a>
+        <button type="button" class="navbar-toggle"></button>
+    </div>
+</div>
+<div class="navbar-menu-wrap" id="navbarMenu">
+    <span class="navbar-menu-close">×</span>
+    <ul class="navbar-menu">
+        <li>
+            <a href="../index.html">首页</a>
+        </li>
+        <li>
+            <a class="dropdown" href="#coreproducts">公司资讯</a>
+            <ul>
+                <li><a href="about_us.html">关于我们</a></li>
+                <li><a href="company_advantage.html">公司优势</a></li>
+                <li><a href="successful_case.html">成功案例</a></li>
+                <li><a href="business_cooperation.html">商务合作</a></li>
+                <li><a href="service_network.html">服务网络</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="dropdown" href="#coreproducts">产品服务</a>
+            <ul>
+                <li><a href="cloud_service.html">云服务</a></li>
+                <li><a href="software_hyrjkf.html">行业软件服务</a></li>
+                <li><a href="software_yyrjkf.html">应用软件开发</a></li>
+                <li><a href="software_rjzywb.html">软件资源外包</a></li>
+                <li><a href="apply_try_form.html">产品试用申请表</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="join_us.html">加入我们</a>
+        </li>
+    </ul>
+</div>
+
+<div class="index-main">
+    <div class="tabList cloud-service">
+        <div class="tabList-item">
+            <h2 class="item-title">精益作业通云服务</h2>
+            <img class="item-img scrollLoading" data-url="../images/cloud_jlw.png">
+            <p class="item-desc">精益作业通是面向中小学现有纸质作业模式，有效提高作业质量和作业效率的云服务。通过管理作业全过程：做、批、改、问，适时帮扶学生，实现学生作业的即做即批即改，及时反思，帮助学生养成良好的学习方法和学习习惯；同时，大量减少教师的作业批阅工作量，使教师专注于作业的查、评、交流和跟踪。有效提高学生作业练习效果和学习成绩。</p>
+            <button class="form-submit-btn try-apply-btn" onclick="javascript:window.location.href='apply_try_form.html'">申请试用</button>
+        </div>
+        <div class="tabList-item">
+            <h2 class="item-title">教学管理云服务</h2>
+            <img class="item-img scrollLoading" data-url="../images/cloud_istl.png">
+            <p class="item-desc">通过云模式，为中小学提供校历管理、课程管理、课表管理、备课管理、
+                教研管理、学习管理、作业管理、成绩管理、考勤管理、事件管理、
+                奖惩管理等与教学活动有关的管理功能及其之上的教师考评、成绩簿和教学分析，
+                并提供校长信息平台、教职工工作平台和家长/学生信息平台，
+                全面提升学校的教学活动管理水平和教学质量。</p>
+        </div>
+        <div class="tabList-item">
+            <h2 class="item-title">供应链质量管理云服务</h2>
+            <img class="item-img scrollLoading" data-url="../images/cloud_iscq.png">
+            <p class="item-desc">通过云模式、移动互联和大数据技术，为制造业供应链的品牌商、
+                代工厂和供应商提供各环节交付物的质量、时效和追溯的品质管理，全面提升整个供应链交付物的品质。</p>
+        </div>
+        <div class="tabList-item">
+            <h2 class="item-title">企业移动管理云服务</h2>
+            <img class="item-img scrollLoading" data-url="../images/cloud_imanage.png">
+            <p class="item-desc">通过云模式和移动互联方式，
+                高性价比地为企业提供内部安全事件管理、锐器管理、差旅安排、宿舍管理、管理报表等管理服务。</p>
+        </div>
+        <div class="tabList-item">
+            <h2 class="item-title">政府OA</h2>
+            <img class="item-img scrollLoading" data-url="../images/cloud_ioa.png">
+            <p class="item-desc">基于政务云平台，应用云平台和大数据技术，
+                为一级政府（市/区县的）或垂直管理部门（工商/税务等）的数十上百单位提供办公自动化服务，
+                通过协同办公平台，支持跨单位的公文交换、协同办文和协同办会（可追踪跨单位办文）。
+                形成高效科学的办公办文管理体系，提高整个政府的办文办公效率与行政管理水平。</p>
+        </div>
+    </div>
+</div>
+
+<p class="copyright">Copyright 2017 © JadeFortune Technology All rights reserved</p>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/lazyload_img.js"></script>
+<script src="../js/wechat.js"></script>
+</body>
+</html>

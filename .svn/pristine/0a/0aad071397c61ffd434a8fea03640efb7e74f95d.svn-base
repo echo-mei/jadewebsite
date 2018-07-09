@@ -1,0 +1,254 @@
+<div class="modal-box modal-form-submit modal-resume-form">
+
+    <div class="md-header">
+        <h1>招聘申请表<span class="required">*为必填项</span><span class="close-popdown md-close">×</span></h1>
+    </div>
+    <div class="md-body">
+        <table class="resume-table clearfix">
+            <tr class="resume-item">
+                <td>照片：</td>
+                <td id="IDPhoto" class="IDPhoto" colspan="3">
+                    <div class="IDPhoto-img">
+                        <img name="IDPhoto-img" id="IDPhoto-img" alt="照片" src="">
+                    </div>
+                    <div>
+                        <a class="fu-browse-btn">
+                            <input type="file" id="fileImg" name="image" accept="image/jpg,image/jpeg,image/png,image/bmp,image/gif" onchange="javascript:setImagePreview();">选择照片
+                        </a>
+                        <p class="fu-tips" title="图片请小于500K（jpg、png、bmp、gif）">图片请小于500K（jpg、png、bmp、gif）</p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>应聘岗位：</td>
+                <td id="applyJob"></td>
+                <td><span>*</span>到岗日期：</td>
+                <td>
+                    <input class="date" class="require" type="text" id="arrivalDate">
+                    <span class="prompt">到岗日期不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>姓名：</td>
+                <td><input type="text" class="require" id="name"/>
+                    <span class="prompt">姓名不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+                <td><span>*</span>性别：</td>
+                <td>
+                    <label><input type="radio" class="require" name="sex" value="1" checked>男</label>
+                    <label><input type="radio" class="require" name="sex" value="0"/>女</label>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>籍贯：</td>
+                <td><input type="text" class="require" id="nativePlace"/>
+                    <span class="prompt">籍贯不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+                <td><span>*</span>现居住地：</td>
+                <td><input type="text" class="require" id="currentAddress"/>
+                    <span class="prompt">现居住地不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>邮箱：</td>
+                <td class="email">
+                    <input type="text" id="email" class="require"/>
+                    <span class="prompt"> 邮箱不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+                <td><span>*</span>手机：</td>
+                <td class="phone">
+                    <input type="text" id="phone" class="require"/>
+                    <span class="prompt"> 联系电话不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>QQ/微信：</td>
+                <td><input type="text" id="qq" class="require"/>
+                    <span class="prompt"> QQ不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+                <td><span>*</span>毕业院校：</td>
+                <td><input type="text" id="graduateSchool" class="require"/>
+                    <span class="prompt"> 毕业院校不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>学历：</td>
+                <td>
+                    <select id="universityDegree" class="require">
+                        <option value="本科">本科</option>
+                        <option value="硕士">硕士</option>
+                        <option value="博士">博士</option>
+                        <option value="MBA">MBA</option>
+                        <option value="大专">大专</option>
+                        <option value="初中及以下">初中及以下</option>
+                        <option value="高中">高中</option>
+                        <option value="技校/职高">技校/职高</option>
+                        <option value="中专">中专</option>
+                        <option value="其他">其他</option>
+                    </select>
+                    <span class="prompt"> 学历不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+                <td><span>*</span>专业：</td>
+                <td><input type="text" id="major" class="require"/>
+                    <span class="prompt">专业不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>毕业日期：</td>
+                <td>
+                    <input class="date" class="require" type="text" id="graduationDate">
+                    <span class="prompt">毕业日期不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+                <td><span>*</span>英语水平：</td>
+                <td><input type="text" id="englishLevel" class="require"/>
+                    <span class="prompt">英语水平不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>计算机水平：</td>
+                <td><input type="text" id="computerLevel" class="require"/>
+                    <span class="prompt">计算机水平不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span>*</span>所获证书：</td>
+                <td colspan="3" class="textarea-wrap"><textarea id="certificate" class="require"></textarea>
+                    <span class="prompt">所获证书不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><span>*</span>在校经历：</td>
+                <td colspan="3" class="textarea-wrap"><textarea id="associationActivity" class="require"></textarea>
+                    <span class="prompt">在校经历不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><span>*</span>实习/工作经历：</td>
+                <td colspan="3" class="textarea-wrap"><textarea id="practiceExperience" class="require"></textarea>
+                    <span class="prompt">实习/工作经历不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>兴趣爱好：</td>
+                <td colspan="3"><textarea id="hobbies"></textarea></td>
+            </tr>
+            <tr>
+                <td>自我评价：</td>
+                <td colspan="3"><textarea id="selfEvaluation"></textarea></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-btn-wrap">
+        <button class="form-submit resume-form-btn">提交</button>
+    </div>
+
+</div>
+
+
+<script>
+    //下面用于图片上传预览功能
+    function setImagePreview(avalue) {
+        var docObj = document.getElementById("fileImg");
+        var imgObjPreview = document.getElementById("IDPhoto-img");
+        //files属性：返回一个 Files 集合，由指定文件夹中包含的所有 File 对象组成，包括设置了隐藏和系统文件属性的文件。
+        if (docObj.files && docObj.files[0]) {
+            //火狐下，直接设img属性
+            imgObjPreview.style.display = 'block';
+            imgObjPreview.style.width = '100px';
+            imgObjPreview.style.height = '120px';
+            //imgObjPreview.src = docObj.files[0].getAsDataURL();
+
+            //火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式
+
+            imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+        } else {
+            //IE下，使用滤镜
+            //
+            docObj.select();
+            var imgSrc = document.selection.createRange().text;
+            var localImagId = document.getElementById("localImag");
+            //必须设置初始大小
+            localImagId.style.width = "100px";
+            localImagId.style.height = "120px";
+            //图片异常的捕捉，防止用户修改后缀来伪造图片
+            try {
+                localImagId.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+                localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+            }
+            catch (e) {
+                alert("您上传的图片格式不正确，请重新选择!");
+                return false;
+            }
+            imgObjPreview.style.display = 'none';
+            document.selection.empty();
+        }
+        return true;
+    }
+
+    $(function () {
+        $('#applyJob').html(localStorage.getItem("applyJob"));
+
+        $(window).resize(function () {
+            var maxHeight = $(window).height() - $(".md-header").outerHeight(true) - $(".form-btn-wrap").outerHeight(true);
+            $(".md-body").css("max-height", maxHeight);
+            var marginTop = $(".modal-box").height();//调用多次？？
+            $(".modal-box").css("margin-top", -marginTop / 2);
+        }).resize();
+
+        var currYear = (new Date()).getFullYear();
+        var opt = {};
+        opt.date = {preset: 'date'};
+        opt.datetime = {preset: 'datetime'};
+        opt.time = {preset: 'time'};
+        opt.default = {
+            theme: 'android-ics light', //皮肤样式
+            mode: 'scroller', //日期选择模式
+            dateFormat: 'yyyy-mm-dd',
+            lang: 'zh',
+            showNow: true,
+            nowText: "今天",
+            startYear: currYear - 50, //开始年份
+            endYear: currYear + 10 //结束年份
+        };
+
+        $(".date").mobiscroll($.extend(opt['date'], opt['default']));
+
+
+
+    });
+
+</script>

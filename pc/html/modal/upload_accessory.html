@@ -1,0 +1,115 @@
+<div class="modal-box" style="width: 500px;margin-left: -250px;">
+    <div class="md-header">
+        <h1>上传简历附件<span class="close-popdown md-close">×</span></h1>
+    </div>
+    <div class="md-body">
+        <div class="file-upload-wrap">
+
+            <div class="fu-file-choice clearfix">
+                <div class="fu-file-name" id="fileName"></div>
+                <a class="fu-browse-btn">浏览<input type="file" name='fileDoc' id="fileDoc"></a>
+            </div>
+            <div class="fu-require">
+                <h3>注意:</h3>
+                <p>1.请选择5M以下的文件;</p>
+                <p>2.支持的文件格式:doc,docx,pdf,wps。</p></div>
+            <button class="fu-upload-btn" id="uploadDoc_btn">上传</button>
+            <p class="fu-tips" id="fu-tips"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $(window).resize(function(){
+            var marginTop = $(".modal-box").height();//调用多次？？
+            $(".modal-box").css("margin-top",-marginTop/2);
+        }).resize();
+
+        $("#fileDoc").change(function () {
+            var myfile = $('#fileDoc')[0];
+            var fileName = myfile.files[0].name==undefined?"":myfile.files[0].name;
+            $("#fileName").text(fileName)
+                .attr("title",fileName);
+        });
+
+        $("#uploadDoc_btn").click(function () {
+            var btn = $(this)[0];
+            //检查 按钮是否被锁住，锁住直接rerun
+            if($(this).attr('lock') == 1){
+                return;
+            }
+            //上锁
+            $(this).attr('lock',1);
+            //更改状态
+            var count = 0;
+            btn.innerText = '上传中... (' + count + ' s)';
+            var countdown = setInterval(CountDown, 1000);
+
+            function CountDown() {
+                count++;
+                btn.innerText = '上传中... (' + count + ' s)';
+            }
+
+            function submitOver() {
+                //还原状态
+                btn.innerText = '上传';
+                count = 0;
+                clearInterval(countdown);
+            }
+
+            var fileObj = document.getElementById("fileDoc").files[0]; // js 获取文件对象
+            if (typeof (fileObj) == "undefined" || fileObj.size <= 0) {
+                alert("请选择文件");
+                return;
+            }
+            var formFile = new FormData();
+            formFile.append("action", "UploadVMKImagePath");
+            formFile.append("file", fileObj); //加入文件对象
+            formFile.append("position", localStorage.getItem("applyJob")); //加入文件对象
+
+
+            //第一种  XMLHttpRequest 对象
+            //var xhr = new XMLHttpRequest();
+            //xhr.open("post", "/Admin/Ajax/VMKHandler.ashx", true);
+            //xhr.onload = function () {
+            //    alert("上传完成!");
+            //};
+            //xhr.send(formFile);
+
+            //第二种 ajax 提交
+
+            var data = formFile;
+            $.ajax({
+                url: "../../admin/data/recruitApply/recruitAccessoryAction.php?method=addResumeAccessory",
+                data: data,
+                type: "Post",
+                dataType: "json",
+                cache: false,//上传文件无需缓存
+                processData: false,//用于对data参数进行序列化处理 这里必须false
+                contentType: false, //必须
+                timeout: 30000,
+                success: function (res) {
+                    submitOver();
+                    $("#fu-tips").text("感谢您应聘此职位，我们已成功接收您的简历，\n" +
+                        "我们会尽快联系你！");
+                    setTimeout(function () {
+                        //请求成功解锁
+                        btn.setAttribute('lock', "0");
+                        $.fn.close_popdown();
+                    },1000);
+                },error: function(res) {
+                    submitOver();
+                    $("#fu-tips").text("上传失败，请检查您的文件格式及大小，重新上传！！！");
+                    //请求成功解锁
+                    btn.setAttribute('lock', "0");
+                    setTimeout(function () {
+                        $("#fu-tips").text("");
+                    },5000);
+                }
+            })
+        });
+    });
+
+</script>
+

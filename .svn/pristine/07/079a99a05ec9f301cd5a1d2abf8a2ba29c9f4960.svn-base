@@ -1,0 +1,30 @@
+<!--商务合作-->
+<h2 class="main-right-title">商务合作</h2>
+<div class="z-business">
+	<dl>
+		<ul>
+			<h3>合作伙伴：</h3>
+			<li><span></span>IT厂商</li>
+			<li><span></span>IT顾问公司</li>
+			<li><span></span>系统集成服务商</li>
+			<li><span></span>软件代理商</li>
+			<li><span></span>云服务代理商</li>
+		</ul>
+		<ul>
+			<h3>主要客户：</h3>
+			<li><span></span>追求高性价比和长期软件服务的国内外客户</li>
+			<li><span></span>国际公司或机构</li>
+			<li><span></span>接受云服务模式的企业</li>
+			<li><span></span>接受云服务模式的教育机构</li>
+		</ul>
+		<ul>
+			<h3>联系我们：</h3>
+			<li><a class="z-email" href="mailto:company@jadefortune.com.cn">company@jadefortune.com.cn</a></li>
+		</ul>
+	</dl>
+	<dl>
+		<dt><img src="../img/pic/business_right.jpg"/></dt>
+	</dl>
+</div>
+<h1 class="clean"></h1>
+

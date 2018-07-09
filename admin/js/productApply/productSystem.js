@@ -1,0 +1,151 @@
+function buildGrid($context) {
+	var limit = 10;
+	grid(0, limit);
+	$context.find('#searcher').change(function() {
+		$context.find('#searcher-input').attr('name', $(this).val());
+	});
+	$context.find('#searcher-btn').click(function() {
+		var currentPage = Number($context.find('#productSystemGrid .am-pagination li.am-active a').html());
+		grid((currentPage-1)*limit, limit);
+	});
+	/****查看详情*******************/
+	function showDetail(v) {
+		$('#app-modal .am-modal-hd .title').html('产品申请详情');
+		$('#app-modal .am-modal-bd .tpl-amazeui-form').empty();
+		for(var key in v) {
+			var label = '';
+			switch(key) {
+			case 'productFrom': label = '申请来源';break;
+			case 'name': label = '姓名';break;
+			// case 'qqWechat': label = 'QQ/微信';break;
+			case 'phone': label = '联系电话';break;
+			// case 'email': label = '邮箱';break;
+			case 'unit': label = '单位名称';break;
+			// case 'unitAddress': label = '单位地址';break;
+			case 'applyDate': label = '申请日期';break;
+			}
+			if(label) {
+				$('#app-modal .am-modal-bd .tpl-amazeui-form').append(
+					'<div class="am-form-group"><label class="am-u-sm-4 am-form-label">'+label+'</label>'+(v[key]?v[key]:'')+'</div>'
+				);
+			}
+		}
+		$('#app-modal').modal();
+		if(v.isRead!=1) {
+			$.ajax({
+				type: 'post',
+				dataType: 'json',
+				data: {
+					id: v.id
+				},
+				url: 'data/productApply/productApplyAction.php?method=setRead',
+				success: function(resp) {
+					if(resp.status=='success') {
+						$context.find('#searcher-btn').click();
+					}
+				}
+			});
+		}
+	}
+	/*列表**************************************/
+	function events() {
+		$context.find('#productSystemGrid .am-pagination a').click(function(e) {
+			if(!isNaN($(this).html())) {
+				grid((Number($(this).html())-1)*limit, limit);
+			}
+		});
+		$context.find('#productSystemGrid .am-pagination .prevPage').click(function(e) {
+			var currentPage = Number($context.find('#productSystemGrid .am-pagination li.am-active a').html());
+			if(currentPage>1) {
+				grid((currentPage-2)*limit, limit);
+			}
+		});
+		$context.find('#productSystemGrid .am-pagination .nextPage').click(function(e) {
+			var currentPage = Number($context.find('#productSystemGrid .am-pagination li.am-active a').html());
+			var pages = Number($context.find('#productSystemGrid .am-pagination li:last-child').prev('li').find('a').html());
+			if(currentPage<pages) {
+				grid(currentPage*limit, limit);
+			}
+		});
+	}
+	function grid(start, limit) {
+		var data = {
+			start: start,
+			limit: limit
+		};
+		if($context.find('#searcher-input').attr('name')&&$context.find('#searcher-input').val()!=undefined) {
+			data[$context.find('#searcher-input').attr('name')] = $context.find('#searcher-input').val();
+		}
+		$.ajax({
+			url: 'data/productApply/productApplyAction.php?method=listProductApply&systemId='+$context.attr('data-systemId'),
+			type: 'get',
+			data: data,
+			dataType: 'json',
+			success: function(resp) {
+				var pages = Math.ceil(resp.total/data.limit);
+				var currentPage = (data.start/data.limit)+1;
+				$context.find('#productSystemGrid table tbody').empty();
+				resp.rows&&resp.rows.forEach(function(v, i) {
+					$tr = $('<tr class="'+(v.isRead!=1?'no-look':'')+'">'+
+		                	'<td><input type="checkbox"></td>'+
+		                	'<td>'+(v.id?v.id:'')+'</td>'+
+		                	'<td>'+(v.productFrom?v.productFrom:'')+'</td>'+
+		                	'<td>'+(v.name?v.name:'')+'</td>'+
+		                	// '<td>'+(v.qqWechat?v.qqWechat:'')+'</td>'+
+		                	'<td>'+(v.phone?v.phone:'')+'</td>'+
+		                	// '<td>'+(v.email?v.email:'')+'</td>'+
+		                	'<td>'+(v.unit?v.unit:'')+'</td>'+
+		                	// '<td>'+(v.unitAddress?v.unitAddress:'')+'</td>'+
+		                	'<td>'+(v.applyDate?v.applyDate:'')+'</td>'+
+		                	'<td>'+
+		                		'<div class="am-btn-toolbar">'+
+		                            '<div class="am-btn-group am-btn-group-xs">'+
+		                                '<button type="button" class="detail am-btn am-btn-default am-btn-xs am-text-secondary js-modal-open">'+
+		                                	'<span class="am-icon-eye"></span> 查看详情'+
+		                                '</button>'+
+		                            '</div>'+
+		                        '</div>'+
+		                	'</td>'+
+	                    '</tr>');
+					$tr.find('button.detail').click(function() {
+						showDetail(v);
+					});
+					$context.find('#productSystemGrid table tbody').append($tr);
+				});
+				var pagination = '';
+				pagination += '<li><a href="#" class="prevPage">«</a></li>';
+				pagination += '<li class="'+(1==currentPage?'am-active':'')+'"><a href="javascript:void(0)">1</a></li>';
+				if(pages<7) {
+				    for(var i=2; i<=pages; i++) {
+				    	pagination += '<li class="'+(i==currentPage?'am-active':'')+'"><a href="javascript:void(0)">'+i+'</a></li>';
+				    }
+	            }else if(pages>=7) {
+	            	if(currentPage<5) {
+	                    for(i=2; i<=5; i++) {
+	                    	pagination += '<li class="'+(i==currentPage?'am-active':'')+'"><a href="javascript:void(0)">'+i+'</a></li>';
+	                    }
+	                    pagination += '<li><a href="javascript:void(0)">...</a></li>';
+	                    pagination += '<li><a href="javascript:void(0)">'+pages+'</a></li>';
+	            	}else if(currentPage>=5&&currentPage<=pages-5) {
+	            		pagination += 
+	                        '<li><a href="javascript:void(0)">...</a></li>'+
+	                        '<li><a href="javascript:void(0)">'+(currentPage-1)+'</a></li>'+
+	                        '<li class="am-active"><a href="javascript:void(0)">'+currentPage+'</a></li>'+
+	                        '<li><a href="javascript:void(0)">'+(currentPage+1)+'</a></li>'+
+	                        '<li><a href="javascript:void(0)">...</a></li>'+
+	                        '<li><a href="javascript:void(0)">'+pages+'</a></li>';
+	            	}else if(currentPage>pages-5) {
+	                    pagination += '<li><a href="javascript:void(0)">...</a></li>';
+	                    for(var i=pages-4; i<=pages; i++) {
+	                    	pagination += '<li class="'+(i==currentPage?'am-active':'')+'"><a href="javascript:void(0)">'+i+'</a></li>';
+	                    }
+	            	}
+	            }
+				pagination += '<li><a href="#" class="nextPage">»</a></li>';
+				$context.find('#productSystemGrid .am-pagination').empty().append(pagination);
+				events();
+			}
+		});
+	}
+	/*列表**************************************/
+}

@@ -1,0 +1,327 @@
+<div class="modal-box modal-form-submit modal-resume-form">
+
+    <div class="md-header">
+        <h1>招聘申请表<span class="required">*为必填项</span><span class="close-popdown md-close">×</span></h1>
+    </div>
+    <div class="md-body">
+        <table class="resume-table clearfix">
+            <tr class="resume-item">
+                <td>照片：</td>
+                <td id="IDPhoto" class="IDPhoto" colspan="3">
+                    <div class="IDPhoto-img">
+                        <img name="IDPhoto-img" id="IDPhoto-img" alt="照片" src="../img/default_photo.jpg">
+                    </div>
+                    <div>
+                        <a class="fu-browse-btn">
+                            <input type="file" id="fileImg" name="image" accept="image/jpg,image/jpeg,image/png,image/bmp,image/gif">选择照片
+                        </a>
+                        <p class="fu-tips" title="图片请小于500K（jpg、png、bmp、gif）">图片请小于500K（jpg、png、bmp、gif）</p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>应聘岗位：</td>
+                <td id="applyJob"></td>
+                <td><span>*</span>到岗日期：</td>
+                <td>
+                    <input class="require" type="text" id="arrivalDate" onClick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd',minDate:'%y-%M-%d',maxDate:'%y-{%M+6}-%d'});">
+                    <span class="prompt">到岗日期不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>姓名：</td>
+                <td><input type="text" class="require" id="name"/>
+                    <span class="prompt">姓名不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+                <td><span>*</span>性别：</td>
+                <td>
+                    <label><input type="radio" class="require" name="sex" value="1" checked>男</label>
+                    <label><input type="radio" class="require" name="sex" value="0"/>女</label>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>籍贯：</td>
+                <td><input type="text" class="require" id="nativePlace"/>
+                    <span class="prompt">籍贯不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+                <td><span>*</span>现居住地：</td>
+                <td><input type="text" class="require" id="currentAddress"/>
+                    <span class="prompt">现居住地不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>邮箱：</td>
+                <td class="email">
+                    <input type="text" id="email" class="require"/>
+                    <span class="prompt"> 邮箱不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+                <td><span>*</span>联系电话：</td>
+                <td class="phone">
+                    <input type="text" id="phone" class="require"/>
+                    <span class="prompt"> 联系电话不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>QQ/微信：</td>
+                <td><input type="text" id="qq" class="require"/>
+                    <span class="prompt"> QQ不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+                <td><span>*</span>毕业院校：</td>
+                <td><input type="text" id="graduateSchool" class="require"/>
+                    <span class="prompt"> 毕业院校不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <td><span>*</span>学历：</td>
+                <td>
+                    <select id="universityDegree" class="require">
+                        <option value="本科">本科</option>
+                        <option value="硕士">硕士</option>
+                        <option value="博士">博士</option>
+                        <option value="MBA">MBA</option>
+                        <option value="大专">大专</option>
+                    </select>
+                    <span class="prompt"> 学历不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+                <td><span>*</span>专业：</td>
+                <td><input type="text" id="major" class="require"/>
+                    <span class="prompt">专业不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr class="resume-item">
+                <!--<td><span>*</span>毕业日期：</td>-->
+                <!--<td>-->
+                    <!--<input class="date" class="require" type="text" id="graduationDate">-->
+                    <!--<span class="prompt">毕业日期不能为空</span>-->
+                    <!--<span class="triangle2"></span>-->
+                    <!--<span class="triangle1"></span>-->
+                <!--</td>-->
+                <td><span>*</span>英语水平：</td>
+                <td>
+                    <select id="englishLevel" class="require">
+                        <!--<option value="无">无</option>-->
+                        <option value="四级">四级</option>
+                        <option value="六级">六级</option>
+                        <option value="其他">其他</option>
+                    </select>
+                    <span class="prompt">英语水平不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <!--<tr class="resume-item">-->
+                <!--<td><span>*</span>计算机水平：</td>-->
+                <!--<td><input type="text" id="computerLevel" class="require"/>-->
+                    <!--<span class="prompt">计算机水平不能为空</span>-->
+                    <!--<span class="triangle2"></span>-->
+                    <!--<span class="triangle1"></span>-->
+                <!--</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+            <!--</tr>-->
+            <tr>
+                <td><span>*</span>所获证书：</td>
+                <td colspan="3" class="textarea-wrap"><textarea id="certificate" class="require"></textarea>
+                    <span class="prompt">所获证书不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><span>*</span>在校经历：</td>
+                <td colspan="3" class="textarea-wrap"><textarea id="associationActivity" class="require"></textarea>
+                    <span class="prompt">在校经历不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><span>*</span>工作经历：</td>
+                <td colspan="3" class="textarea-wrap"><textarea id="practiceExperience" class="require"></textarea>
+                    <span class="prompt">工作经历不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><span>*</span>实习经历：</td>
+                <td colspan="3" class="textarea-wrap"><textarea id="shixiExperience" class="require"></textarea>
+                    <span class="prompt">实习经历不能为空</span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>兴趣爱好：</td>
+                <td colspan="3"><textarea id="hobbies"></textarea></td>
+            </tr>
+            <tr>
+                <td>自我评价：</td>
+                <td colspan="3"><textarea id="selfEvaluation"></textarea></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form-btn-wrap">
+        <button class="form-submit resume-form-btn" id="resume-form-btn">提交</button>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+<script>
+    $(function () {
+
+        $(window).resize(function () {
+            var maxHeight = $(window).height() - $(".md-header").outerHeight(true) - $(".form-btn-wrap").outerHeight(true);
+            $(".md-body").css("max-height", maxHeight);
+            var marginTop = $(".modal-box").height();//调用多次？？
+            $(".modal-box").css("margin-top", -marginTop / 2);
+        }).resize();
+
+        $('#applyJob').html(localStorage.getItem("applyJob"));
+
+        //图片上传预览功能
+        $("#fileImg").change(function () {
+            var fileObj = $(this)[0],
+                imgObjPreview = $("#IDPhoto-img")[0],
+                windowURL = window.URL || window.webkitURL;
+
+            //files属性：返回一个 Files 集合，由指定文件夹中包含的所有 File 对象组成，包括设置了隐藏和系统文件属性的文件。
+            if (fileObj.files && fileObj.files[0] && fileObj.files[0].size<500*1024) {
+                imgObjPreview.src = windowURL.createObjectURL(fileObj.files[0]);
+            } else if(fileObj.files[0].size>500*1024){
+                alert("您上传的图片超过500k,请重新上传");
+            }else{
+                //IE下，使用滤镜
+                fileObj.select();
+                var imgSrc = document.selection.createRange().text;
+                var localImagId = document.getElementById("localImag");
+                //必须设置初始大小
+                localImagId.style.width = "100px";
+                localImagId.style.height = "110px";
+                //图片异常的捕捉，防止用户修改后缀来伪造图片
+                try {
+                    localImagId.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+                    localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+                }
+                catch (e) {
+                    alert("您上传的图片格式不正确，请重新选择!");
+                    return false;
+                }
+                imgObjPreview.style.display = 'none';
+                document.selection.empty();
+            }
+        });
+
+        //申请职位在线填写简历
+        $(document).on('click', '.modal-box #resume-form-btn', function () {
+            //招聘表单
+            var applyJob = $("#applyJob").text(),
+                arrivalDate = $("#arrivalDate").val(),
+                name = $("#name").val(),
+                sex = $('input:radio[name="sex"]:checked').val(),
+                nativePlace = $("#nativePlace").val(),
+                currentAddress = $("#currentAddress").val(),
+                email = $("#email").val(),
+                phone = $("#phone").val(),
+                qq = $("#qq").val(),
+                graduateSchool = $("#graduateSchool").val(),
+                universityDegree = $("#universityDegree").val(),
+                major = $("#major").val(),
+//                graduationDate = $("#graduationDate").val(),
+                englishLevel = $("#englishLevel").val(),
+                computerLevel = $("#computerLevel").val(),
+                certificate = $("#certificate").val(),
+                associationActivity = $("#associationActivity").val(),
+                practiceExperience = $("#practiceExperience").val(),
+                shixiExperience = $("#shixiExperience").val(),
+                hobbies = $("#hobbies").val(),
+                selfEvaluation = $("#selfEvaluation").val(),
+                flag = true,
+                formData = new FormData(),
+                postData,postUrl;
+
+            $('.require').each(function (index) {
+                if ($(this).val() == '' || undefined) {
+                    $(this).addClass('red');
+                    $(this).parent().children('span').show();
+                    flag = false;
+                }
+            });
+
+            if (!((/^1[34578]\d{9}$/.test(phone)) || (/^\d{3}-\d{7,8}|\d{4}-\d{7,8}$/.test(phone))) && phone.length > 0) {
+                $('#phone').addClass('red');
+                $('.phone span').show();
+                $('.phone .prompt').text("号码格式错误(固话请以-分隔,并加区号)");
+                flag = false;
+            }
+
+            if (!( /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email)) && email.length > 0) {
+                $('#email').addClass('red');
+                $('.email span').show();
+                $('.email .prompt').text("邮箱格式错误");
+                flag = false;
+            }
+
+            if (!flag){
+                return;
+            }else {
+                var fileObj = $("#fileImg")[0].files[0]; // js 获取文件对象
+                formData.append("action", "UploadVMKImagePath");
+                formData.append("file", fileObj); //加入文件对象
+                formData.append('recruitFrom', 'PC');
+                formData.append('position', applyJob);
+                formData.append('workDate', arrivalDate);
+                formData.append('name', name);
+                formData.append('sex', sex);
+                formData.append('nativePlace', nativePlace);
+                formData.append('currentAddress', currentAddress);
+                formData.append('email', email);
+                formData.append('phone', phone);
+                formData.append('qq', qq);
+                formData.append('school', graduateSchool);
+                formData.append('education', universityDegree);
+                formData.append('major', major);
+//                formData.append('graduationDate', graduationDate);
+                formData.append('englishLevel', englishLevel);
+                formData.append('computerLevel', computerLevel);
+                formData.append('certificate', certificate);
+                formData.append('associationActivity', associationActivity);
+                formData.append('practiceExperience', practiceExperience);
+                formData.append('shixiExperience', shixiExperience);
+                formData.append('hobbies', hobbies);
+                formData.append('selfEvaluation', selfEvaluation);
+
+                postData = formData;
+                postUrl = "../../admin/data/recruitApply/recruitApplyAction.php?method=addRecruitApply";
+
+                ajaxEmail($(this)[0], postUrl, postData);
+            }
+
+        });
+
+
+
+    });
+
+</script>

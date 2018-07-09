@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>产品试用申请</title>
+    <meta http-equiv=Content-Type content="text/html;" />
+    <meta content="软件开发，系统集成，云服务，应用软件开发，行业软件开发，软件资源外包，教学管理，企业移动管理，供应链质量管理，政府OA" name="keywords" />
+    <meta name="description" content="中国领先的应用软件服务供应商，千万元级软件开发项目的领军人物，美国归来的管理专才和软件专家，十几年软件开发经验的项目经理和系统架构师，政府、医疗、教育、金融、航空、电信&广电、物流、零售、CRM、制造业等行业专家" />
+    <meta content="版权所有:深圳市嘉德永丰开发科技股份有限公司" name="copyright" />
+    <meta content="MSHTML 6.00.2900.3492" name="GENERATOR" />
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="../favicon.ico" type="image/x-icon" />
+
+    <script src="../js/font_size_autoAdapt.js"></script>
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+<div class="navbar-top" id="navbarTop">
+    <div class="navbar-header clearfix">
+        <a class="navbar-logo" href="#"><img src="../images/navbar_top_logo.png"></a>
+        <button type="button" class="navbar-toggle"></button>
+    </div>
+</div>
+<div class="navbar-menu-wrap" id="navbarMenu">
+    <span class="navbar-menu-close">×</span>
+    <ul class="navbar-menu">
+        <li>
+            <a href="../index.html">首页</a>
+        </li>
+        <li>
+            <a class="dropdown" href="#coreproducts">公司资讯</a>
+            <ul>
+                <li><a href="about_us.html">关于我们</a></li>
+                <li><a href="company_advantage.html">公司优势</a></li>
+                <li><a href="successful_case.html">成功案例</a></li>
+                <li><a href="business_cooperation.html">商务合作</a></li>
+                <li><a href="service_network.html">服务网络</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="dropdown" href="#coreproducts">产品服务</a>
+            <ul>
+                <li><a href="cloud_service.html">云服务</a></li>
+                <li><a href="software_hyrjkf.html">行业软件服务</a></li>
+                <li><a href="software_yyrjkf.html">应用软件开发</a></li>
+                <li><a href="software_rjzywb.html">软件资源外包</a></li>
+                <li><a href="apply_try_form.html">产品试用申请表</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="join_us.html">加入我们</a>
+        </li>
+    </ul>
+</div>
+
+<div class="index-main">
+    <div class="tabList-item apply-try-form" id="applyTryForm">
+        <h3 class="item-title">产品试用申请表</h3>
+
+        <div class="form-item">
+            <label><span class="required">*</span>软件名称: </label>
+            <select required id="softName">
+                <option value="" disabled selected hidden>请选择软件名称</option>
+                <option value="精益作业通云服务">精益作业通云服务</option>
+                <option value="医院人事管理系统">医院人事管理系统</option>
+                <option value="政府OA系统">政府OA系统</option>
+                <option value="公务活动管理系统">公务活动管理系统</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <label><span class="required">*</span>申请人姓名: </label>
+            <input type="text" placeholder="请输入姓名" id="personName">
+        </div>
+        <!--<div class="form-item">-->
+            <!--<label>QQ/微信: </label>-->
+            <!--<input type="text" placeholder="请输入QQ号/微信号" id="qq">-->
+        <!--</div>-->
+        <div class="form-item">
+            <label><span class="required">*</span>联系电话: </label>
+            <input type="text" placeholder="请输入联系电话" id="phone">
+        </div>
+        <!--<div class="form-item">-->
+            <!--<label><span class="required">*</span>邮箱: </label>-->
+            <!--<input type="text" placeholder="请输入邮箱" id="email">-->
+        <!--</div>-->
+        <div class="form-item">
+            <label>学校名称: </label>
+            <input type="text" placeholder="请输入单位" id="businessName">
+        </div>
+        <!--<div class="form-item">-->
+            <!--<label><span class="required">*</span>单位地址: </label>-->
+            <!--<input type="text" placeholder="请输入单位地址" id="businessAddress">-->
+        <!--</div>-->
+        <div class="form-item">
+            <label><span class="required">*</span>验证码: </label>
+            <input type="text" placeholder="请输入验证码" id="verificationCode">
+            <a id="checkcode" onclick="createCode()"></a>
+        </div>
+        <button class="form-submit-btn" id="apply_try_btn">提交申请</button>
+    </div>
+</div>
+
+<p class="copyright">Copyright 2017 © JadeFortune Technology All rights reserved</p>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/wechat.js"></script>
+<script src="../js/check_code.js"></script>
+<script>
+    $(function(){
+        if (localStorage.getItem("tit")){
+            $("#softName option[value="+localStorage.getItem("tit")+"]").attr('selected', true);
+            $("#softName").val(localStorage.getItem("tit"));
+            $("#softName option[value!="+localStorage.getItem("tit")+"]").attr("disabled","disabled");
+            localStorage.removeItem("tit");
+        }else{
+        	  $("#softName option").removeAttr("disabled");
+        }
+        createCode();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>深圳市嘉德永丰开发科技股份有限公司-成功案例</title>
+    <meta http-equiv=Content-Type content="text/html;" />
+    <meta content="软件开发，系统集成，云服务，应用软件开发，行业软件开发，软件资源外包，教学管理，企业移动管理，供应链质量管理，政府OA" name="keywords" />
+    <meta name="description" content="中国领先的应用软件服务供应商，千万元级软件开发项目的领军人物，美国归来的管理专才和软件专家，十几年软件开发经验的项目经理和系统架构师，政府、医疗、教育、金融、航空、电信&广电、物流、零售、CRM、制造业等行业专家" />
+    <meta content="版权所有:深圳市嘉德永丰开发科技股份有限公司" name="copyright" />
+    <meta content="MSHTML 6.00.2900.3492" name="GENERATOR" />
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+<!--头部导航-->
+<div class="au-hd"></div>
+<!--/头部导航-->
+<!--主内容区域-->
+<div class="au-bd">
+    <div class="banner">
+        <img src="../img/pic/cases_banner.jpg" alt="">
+    </div>
+    <div class="main">
+        <div class="main-wrap">
+            <div class="main-left-nav">
+                <ul>
+                    <h5>成功案例</h5>
+                    <li>
+                        <a href="#successful_case_zf">
+                            <i></i>
+                            <span>政府</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#successful_case_yl">
+                            <i></i>
+                            <span>医疗</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#successful_case_jy">
+                            <i></i>
+                            <span>教育</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#successful_case_gq">
+                            <i></i>
+                            <span>国企</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#successful_case_jr">
+                            <i></i>
+                            <span>金融</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#successful_case_hk">
+                            <i></i>
+                            <span>航空</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#successful_case_dx">
+                            <i></i>
+                            <span>电信&广电</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#successful_case_ls">
+                            <i></i>
+                            <span>零售</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#successful_case_crm">
+                            <i></i>
+                            <span>CRM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#successful_case_wl">
+                            <i></i>
+                            <span>物流</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#successful_case_zzy">
+                            <i></i>
+                            <span>制造业</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-right">
+                <div class="case marginTB-50">
+                    <!--政府-->
+                    <div id="successful_case_zf">
+                        <h2><img src="../img/pic/cases_01.png">政府</h2>
+                        <ul>
+                            <li>为省级、副省级城市、地市、区县人社厅/局开发和实施了一体化政府人事编制系统</li>
+                            <li>为市级和区县级人事人才管理部门开发和实施了一体化政府人才服务系统（专技人才、涉外人才、留学生、高层次人才等）</li>
+                            <li>为市级和区县级交通局、规土委、医管中心、工务署提供一体化政府部门人事管理系统</li>
+                            <li>为省级科技厅、农委，市级人社局、编办、发改局、财政局、教育局、医管中心、招标中心、药检所、大学、技师学院、中学、小学、医院提供办公自动化系统和移动办公系统</li>
+                            <li>为市级政府资源中心开发和实施了全市社会用户实名认证系统</li>
+                            <li>为国家级和省级政府机构开发和实施了应急指挥管理系统</li>
+                            <li>为市级规划国土部门开发和实施了数字资源整合系统和全文检索系统</li>
+                            <li>为省级农业部门开发和实施了土地流转系统、农残检测监控系统、农业专家系统</li>
+                        </ul>
+                    </div>
+                    <!--医疗-->
+                    <div id="successful_case_yl">
+                        <h2><img src="../img/pic/cases_02.png">医疗</h2>
+                        <ul>
+                            <li>为市级医管中心开发和实施了一体化政府部门人事管理系统</li>
+                            <li>为市级、区县医院开发和实施了医院人事管理系统</li>
+                        </ul>
+                    </div>
+                    <!--教育-->
+                    <div id="successful_case_jy">
+                        <h2><img src="../img/pic/cases_03.png">教育</h2>
+                        <ul>
+                            <li>为中小学提供核心数据库管理系统</li>
+                            <li>为中小学提供学生信息管理系统</li>
+                            <li>为中小学提供学校教职工管理系统</li>
+                            <li>为中小学提供教学活动管理云服务</li>
+                            <li>为中小学提供作业管理系统</li>
+                            <li>为大学、技师学院、中学、小学提供办公自动化系统和移动办公系统</li>
+                        </ul>
+                    </div>
+                    <!--国企-->
+                    <div id="successful_case_gq">
+                        <h2><img src="../img/pic/cases_04.png">国企</h2>
+                        <ul>
+                            <li>为大型央企集团开发和实施了集团督办系统</li>
+                            <li>为大型央企集团开发和实施了公务活动管理系统</li>
+                        </ul>
+                    </div>
+                    <!--金融-->
+                    <div id="successful_case_jr">
+                        <h2><img src="../img/pic/cases_05.png">金融</h2>
+                        <ul>
+                            <li>为国内多家银行提供二代支付系统的模拟仿真系统和网关开发服务</li>
+                            <li>为地方银行提供银行综合业务系统开发</li>
+                            <li>为全国性银行提供基于Siebel的零售银行客户服务系统</li>
+                            <li>为大型金融投资机构提供基于Salesforce的客户服务系统</li>
+                            <li>为大型保险公司提供财险理赔品质管理的实施服务</li>
+                            <li>为大型券商提供证券资信交流平台的开发服务</li>
+                            <li>为全国性保险公司的网上投保系统进行压力测试和系统性能调优，成效显著</li>
+                        </ul>
+                    </div>
+                    <!--航空-->
+                    <div id="successful_case_hk">
+                        <h2><img src="../img/pic/cases_06.png">航空</h2>
+                        <ul>
+                            <li>为直辖市国际机场提供机场消息集成接口系统和旅检系统的开发服务</li>
+                            <li>为省会国际机场提供通用机场消息集成接口系统和旅检系统的开发服务</li>
+                            <li>为大型国际机场提供航班值机统计报表系统的开发服务</li>
+                            <li>为大型航空公司提供共用平台开发顾问服务</li>
+                        </ul>
+                    </div>
+                    <!--电信&广电-->
+                   <div id="successful_case_dx">
+                       <h2><img src="../img/pic/cases_07.png">电信&广电</h2>
+                       <ul>
+                           <li>为中国最大移动运营商开发和实施了全国的一级BOSS（业务运营支撑系统），并提供长期的运行、维护和升级服务</li>
+                           <li>为全业务的有线电视台开发和实施了有线电视综合业务运营支撑系统</li>
+                           <li>为移动电视运营商开发和实施了工程管理系统和移动数字电视代理网点管理系统</li>
+                           <li>为香港著名电信公司，提供基于PHP的企业管理系统的开发服务</li>
+                       </ul>
+                   </div>
+                    <!--零售-->
+                    <div id="successful_case_ls">
+                        <h2><img src="../img/pic/cases_08.png">零售</h2>
+                        <ul>
+                            <li>为全球零售连锁企业，开发和实施了零售客户优惠券Kiosk系统</li>
+                            <li>为全球零售连锁企业，提供基于BO的零售连锁报表的开发服务</li>
+                        </ul>
+                    </div>
+                    <!--零售-->
+                    <div id="successful_case_crm">
+                        <h2><img src="../img/pic/cases_09.png">CRM</h2>
+                        <ul>
+                            <li>为大型金融投资机构提供基于Salesforce的客户服务系统</li>
+                            <li>为全国性的商业银行提供Siebel CRM的实施服务</li>
+                            <li>为中国保险行业提供客户经理管理软件的开发服务</li>
+                            <li>为大型基金公司开发和实施了客户经理管理系统</li>
+                            <li>为国际快递公司开发和实施了全国客户业务服务系统</li>
+                        </ul>
+                    </div>
+                    <!--物流-->
+                   <div id="successful_case_wl">
+                       <h2><img src="../img/pic/cases_10.png">物流</h2>
+                       <ul>
+                           <li>为世界500强之一的国际快递物流企业开发和实施了全中国的业务和客户管理系统</li>
+                           <li>为世界500强之一的国际快递物流企业开发和实施了客户促销网站管理系统</li>
+                       </ul>
+                   </div>
+                    <!--制造业-->
+                    <div id="successful_case_zzy">
+                        <h2><img src="../img/pic/cases_11.png">制造业</h2>
+                        <ul>
+                            <li>为国际大型玩具公司提供IBM AS400上的ERP系统的开发和维护工作</li>
+                            <li>为大型玩具生产商提供移动管理云服务</li>
+                            <li>为大型手机品牌商提供供应链质量云服务</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/主内容区域-->
+<!--尾部导航-->
+<div class="au-ft"></div>
+<!--/尾部导航-->
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/global.js"></script>
+<script src="../js/scroll_right.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".au-hd").load("common/header.html",function () {
+            loadSuccessHandle(0,"ul5");
+        });
+
+        $(".au-ft").load("common/footer.html");
+    });
+
+</script>
+</body>
+</html>

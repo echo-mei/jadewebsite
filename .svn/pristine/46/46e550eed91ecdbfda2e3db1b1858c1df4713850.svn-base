@@ -1,0 +1,104 @@
+<!--软件服务-行业软件开发-->
+<div class="content software">
+	<h1 class="main-right-title">行业软件开发</h1>
+	<div class="img-text-div" id="compile-sys">
+		<div class="img-div">
+			<img src="img/pic/software_01.png">
+		</div>
+		<div class="text-div">
+			<h2>一体化政府人事编制系统</h2>
+			<p>全国唯一市区组织部、编办、人社局，市区人事主管单位、所有用人单位，市区财政局、社保局、公积金中心、年金中心共用的一体化人事编制管理系统。实现了机构编制和各类公职人员（委任制公务员、聘任制公务员、事业单位人员、工勤、雇员、临聘人员）的全业务、全流程和全生命周期的电子化管理。支持职位分类改革、岗位设置、公安专业化、聘任制、社保协同、年金、住房公积金、法官职业化、编制实名制等各种改革。全面实现数据一体化、业务一体化、平台一体化、省市区一体化。实现政府机构编制和公职人员管理的阳光化、规范化和科学化，可大量节约政府人力成本和行政成本。</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="img-text-div" id="hospital-sys">
+		<div class="img-div">
+			<img src="img/pic/software_02.png">
+		</div>
+		<div class="text-div">
+			<h2>
+				<span>医院人事管理系统</span><span href="html/modal/try_apply_form1.html"
+					class="apply-btn show-modal">申请试用</span>
+			</h2>
+			<p>基于国家和地方人事管理部门和卫生管理部门的人事标准规范开发的医疗行业领先的人事管理软件，全面涵盖医院各类人员的全生命周期的信息管理，支持扩展各类人事业务，提供丰富的人事查询统计报表和自定义查询统计报表，全面支持三甲医院评审的人事管理要求。</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="img-text-div">
+		<div class="img-div">
+			<img src="img/pic/software_03.png">
+		</div>
+		<div class="text-div">
+			<h2>一体化政府人才服务系统</h2>
+			<p>面向各类社会人才，基于互联网+、云技术和大数据的一体化政府人才服务系统。全面落实一门一网、统一受理、统一证照、非现场、无纸化、多渠道的一站式服务，实现专技人才、博士后人才、高层次人才、技能人才和涉外人才等各类人才的各类服务。全面提升政府人才服务的服务质量、服务水平和服务效率，为政府吸引人才、留住人才、发挥人才提供强有力的信息化手段。</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="img-text-div">
+		<div class="img-div">
+			<img src="img/pic/software_04.png">
+		</div>
+		<div class="text-div">
+			<h2>
+				<span>政府OA系统</span><span href="html/modal/try_apply_form1.html"
+					class="apply-btn show-modal">申请试用</span>
+			</h2>
+			<p>基于规则自由流的理念实现的适合政府部门各种公文处理和办公事务的电子政务系统，支持任意公文流转和领导办文，易学易用，易实施易维护。形成高效科学的办公办文体系，可与各政府部门的行政业务系统无缝对接，提高办文办公效率与行政管理水平。应用云技术，通过协同办公平台，支持跨部门的公文交换、协同办文和协同办会（可追踪跨部门办文）。</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="img-text-div" id="official-activity-sys">
+		<div class="img-div">
+			<img src="img/pic/software_05.png">
+		</div>
+		<div class="text-div">
+			<h2>
+				<span>公务活动管理系统</span><span href="html/modal/try_apply_form1.html"
+					class="apply-btn show-modal">申请试用</span>
+			</h2>
+			<p>基于移动互联和大数据，全面涵盖大型集团、政府和企业办公厅/室的公务活动的事前审批、事中执行和事后总结全流程管理的信息化系统。系统支持计划审批、活动日历、协同分工、实时督办提醒、领导谈参和活动数据库等高效公务活动管理工具，为企业积累人脉资源、建立合作关系、聚集外部资源、扩大市场能力提供有力支撑。</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="img-text-div">
+		<div class="img-div">
+			<img src="img/pic/software_06.png">
+		</div>
+		<div class="text-div">
+			<h2>社会统一用户管理系统</h2>
+			<p>基于互联网实名认证的用户管理向所有政府对社会服务的应用系统提供安全可靠的用户登录验证服务，使社会用户（市民和机构）使用同一用户名和密码可以登录办理各政府部门互联网服务。基于统一实名认证用户库，实现深度的互联网政府服务，并实现社会用户行为分析，提高政府社会服务效率和质量。为智慧城市提供统一的安全可靠的用户基础设施，为城市服务、政府管理和大数据分析提供用户基础。</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="img-text-div">
+		<div class="img-div">
+			<img src="img/pic/software_07.png">
+		</div>
+		<div class="text-div">
+			<h2>政府应急指挥管理平台</h2>
+			<p>针对中国政府的应急管理模式设计和开发的，重点实现了应急管理全生命周期各个阶段的全面的应急指挥功能：重要保障期管理、应急预案管理、应急预案执行、日常值班、总指挥管理、应急处置、应急信息中心、电话调度、多级应急操作管理、应急资源管理、信息沟通平台、统一数据交换、统计分析。高性价比地实现了应急管理中横向各政府职能部门的协调和纵向各级政府部门的协调。</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="img-text-div">
+		<div class="img-div">
+			<img src="img/pic/software_08.png">
+		</div>
+		<div class="text-div">
+			<h2>二代支付系统仿真系统</h2>
+			<p>配合国家二代支付系统的实施和推广，推出的二代支付系统的仿真系统，可以帮助各个接入二代支付系统的金融机构或非金融机构进行独立的接口系统的开发和测试。</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="img-text-div img-text-last">
+		<div class="img-div">
+			<img src="img/pic/software_09.png">
+		</div>
+		<div class="text-div">
+			<h2>零售客户促销系统</h2>
+			<p>支持通过Kiosk、互联网站、移动设备等多种促销渠道，提供用户自定义可配置的优惠券、现金券、积分兑换、广告等各种促销方式，帮助零售企业促进老客户消费、吸引新客户、扩大市场份额并创造新的利润增长点。</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+

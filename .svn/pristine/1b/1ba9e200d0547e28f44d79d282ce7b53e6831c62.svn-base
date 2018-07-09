@@ -1,0 +1,74 @@
+<?php 
+require_once '../../include.php';
+include_once '../../common/upload.func.php';
+$method = $_REQUEST['method'];
+if($method=='listRecruitApply') {
+    $start = $_GET['start'];
+    $limit = $_GET['limit'];
+    $sql = "select * from jadewebsite_recruit_apply where 1=1";
+    if($_GET['recruitFrom']!="") { $sql .= " and recruitFrom = '{$_GET['recruitFrom']}'"; }
+    if($_GET['position']!="") { $sql .= " and position like '%{$_GET['position']}%'"; }
+    if($_GET['workDate']!="") { $sql .= " and workDate = '{$_GET['workDate']}'"; }
+    if($_GET['name']!="") { $sql .= " and name like '%{$_GET['name']}%'"; }
+    if($_GET['sex']!="") { $sql .= " and sex = '{$_GET['sex']}'"; }
+    if($_GET['phone']!="") { $sql .= " and phone = '{$_GET['phone']}'"; }
+    if($_GET['school']!="") { $sql .= " and school = '{$_GET['school']}'"; }
+    if($_GET['education']!="") { $sql .= " and education = '{$_GET['education']}'"; }
+    if($_GET['isRead']!="") { $sql .= " and isRead = '{$_GET['isRead']}'"; }
+    $sql .= " order by isRead";
+    $count = getResultNum($sql);
+    $applys = fetchAll($sql." limit {$start},{$limit}");
+    if(count($applys)>0) {
+        array_walk($applys, function(&$v, $k) {
+            if($v['sex']==0) {$v['sexDesc']="女";}
+            elseif($v['sex']==1) {$v['sexDesc']="男";}
+        });
+    }
+    echo json_encode([total=>$count, rows=>$applys]);
+}elseif($method=='setRead') {
+    $id = $_POST['id'];
+    update("jadewebsite_recruit_apply", [isRead=>1], "id = {$id}");
+    $status = "success";
+    echo json_encode([status=>$status]);
+}elseif($method=='addRecruitApply') {
+    date_default_timezone_set("PRC");
+    //获取上传简历后经程序重新更名后的名称
+    $allowExt=array('jpg','png','bmp','gif');
+    if($_POST['recruitFrom'] == "PC"){
+        $newName=uploadFile('img',$allowExt,512000,false);
+    }else{
+        $newName=uploadFile('img',$allowExt,921600,false);
+    }
+
+    $data = [
+        recruitFrom => $_POST['recruitFrom'],
+        deliverDate => date("Y-m-d H:i:sa"),
+        position => $_POST['position'],
+        imgName => $newName[0]['name'],
+        workDate => $_POST['workDate'],
+        name => $_POST['name'],
+        sex => $_POST['sex'],
+        nativePlace => $_POST['nativePlace'],//籍贯
+        currentAddress => $_POST['currentAddress'],//现居地
+        email => $_POST['email'],//邮箱
+        phone => $_POST['phone'],
+        qq => $_POST['qq'],//QQ
+        school => $_POST['school'],
+        education => $_POST['education'],
+        major => $_POST['major'],//学位
+//        graduationDate => $_POST['graduationDate'],//毕业时间
+        englishLevel => $_POST['englishLevel'],//英语等级
+        computerLevel => $_POST['computerLevel'],//计算机等级
+        certificate => $_POST['certificate'],//证书
+        associationActivity => $_POST['associationActivity'],//在校经历
+        practiceExperience => $_POST['practiceExperience'],//工作实习经历
+        shixiExperience => $_POST['shixiExperience'],//工作实习经历
+        hobbies => $_POST['hobbies'],//兴趣爱好
+        selfEvaluation => $_POST['selfEvaluation'],//自我评价
+        isRead => 0
+    ];
+
+    insert("jadewebsite_recruit_apply", $data);
+    echo json_encode([success=>true]);
+}
+?>

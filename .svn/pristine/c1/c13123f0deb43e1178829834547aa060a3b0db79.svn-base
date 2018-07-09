@@ -1,0 +1,388 @@
+/**
+ * Created by Administrator on 2017/5/5.
+ */
+$(function () {
+    $('.to-top').toTop();
+    var bWidth = $(window).width();
+    var lHeight = 600 / 1920 * bWidth;
+    var offsetTopLeftNav = $('.banner').height() + 86 - 58;
+    initFn();
+    $(window).resize(function () {
+        bWidth = $(window).width();
+        lHeight = 600 / 1920 * bWidth;
+        offsetTopLeftNav = lHeight + 86 - 58;
+        initFn();
+    }).resize();
+
+    function initFn() {
+        $('.banner-slider').css('width', '100%');
+        $('.banner-slider').css('height', lHeight + 'px');
+    }
+
+    // 默认导入首页内容
+    setTimeout(function () {
+        loadIndexPage();
+    }, 10);
+
+    //导入首页轮播图图片部分
+    function loadIndexPage() {
+        var html =
+            '<li name="software_service" subname="software_service_hyrjkf" myAttr="hospital-sys" headul="ul2"  serialNum="0"><img src="img/pic/homepage_banner02.jpg" alt=""></li>' +
+            '<li name="software_service" subname="software_service_hyrjkf" myAttr="official-activity-sys" headul="ul2" serialNum="0"><img src="img/pic/homepage_banner03.jpg" alt=""></li>' +
+            '<li name="software_service" subname="software_service_hyrjkf" myAttr="compile-sys" headul="ul2" serialNum="0"><img src="img/pic/homepage_banner04.jpg" alt=""></li>' +
+            '<li name="software_service_yfw" myAttr="cs-yy" headul="ul3"><img src="img/pic/homepage_banner05.jpg" alt=""></li>';
+
+        $('.banner-slider ul').append(html);
+        $('#slider').unslider({
+            dots: true
+        });
+    }
+
+    // 点击logo、首页跳转首页
+    $(".logo img,.header-nav-ul.ul0 h5").click(function () {
+        $("body").load("index.html");
+        loadIndexPage();
+    });
+
+
+    // 点击头部、底部菜单、轮播图、首页软件服务链接
+    $(document).on('click', ".header-nav-ul:not(.ul0) li,.header-nav-ul:not(.ul0) h5,.footer-ul:not(.contact-us) li,.footer-ul:not(.contact-us) h5,.slider-ul li,.i-software-service li", function () {
+        //主内容#container区域
+        var pageName = $(this).attr("name");
+        var pagePath = "html/level1pages/" + pageName + ".html";
+        //主内容右部内容#main-right区域
+        var subPageName = $(this).attr("subname");
+        var subPagePath = "html/level2pages/" + subPageName + ".html";
+        //带锚点的区域块
+        var anchorPointId = $(this).attr("myAttr");
+
+        $(".header-nav-ul").removeClass("active");
+        if (!pageName) {
+            return;
+        } else {
+            var serialNum = $(this).index();//当前索引值:点击的第几个li
+            serialNum == 0 ? 0 : serialNum--;
+            if (pageName === "software_service_yfw") {//点击云服务给云服务导航头部添加样式
+                $(".ul3").addClass("active");
+                serialNum = 0;
+            } else {
+                //轮播图、首页软件服务对应的头部导航位置
+                var headulSlide = $(this).attr("headul");
+                //点击footer区域对应的头部导航
+                var headulFooter = $(this).closest('ul').attr("headul");
+                if (headulFooter != undefined) {
+                    $('.' + headulFooter).addClass("active");
+                } else if (headulSlide != undefined) {
+                    $('.' + headulSlide).addClass("active");
+                    serialNum = $(this).attr("serialNum");
+                } else { //点击header区域链接
+                    $(this).parent(".header-nav-ul").addClass("active");
+                }
+            }
+
+            // 加载主内容区域container内容
+            $("#container").load(pagePath, "", function () {
+                //给左导航对应项添加样式
+                $(".main-left-nav li:eq(" + serialNum + ")").addClass("active").siblings("li").removeClass("active");
+
+                // 加载主内容区域右部main-right内容
+                if (subPageName) {
+                    $("#main-right").load(subPagePath, "", function () {
+                        gotoAnchorPointPosition(anchorPointId);
+                    });
+                } else {
+                    gotoAnchorPointPosition(anchorPointId);
+                }
+            });
+        }
+    });
+
+    /*滚动到特定锚点位置*/
+    function gotoAnchorPointPosition(anchorPointId) {
+        if (anchorPointId) {
+            $(".main-left-nav li[myAttr = '" + anchorPointId + "']").addClass("active").siblings("li").removeClass("active");
+
+            var target_top = $('#' + anchorPointId).offset();
+            $("html,body").animate({scrollTop: target_top.top}, 'slow');  //带滑动效果的跳转
+        } else {
+            $('html,body').animate({scrollTop: 0});
+        }
+    }
+
+    //法律声明
+    $(document).on('click', ".about-us-law", function () {
+
+        $(".header-nav-ul").removeClass("active");
+        $("#container").load("html/level1pages/about_us_law.html");
+
+        $('html,body').animate({scrollTop: 0}, 'slow');
+    });
+
+    // 点击左部导航菜单内容
+    $(document).on('click', ".main-left-nav li", function () {
+        var pageName = $(this).attr("name");
+        var pagePath = "html/level2pages/" + pageName + ".html";
+
+        $(this).addClass("active").siblings("li").removeClass("active");
+        if (!pageName) {
+            return;
+        } else if (pageName === "software_service_yfw") {
+            $(".header-nav-ul").removeClass("active");
+            $(".ul3").addClass("active");
+            $("#container").load("html/level1pages/software_service_yfw.html");
+        } else {
+            $("#main-right").load(pagePath);
+        }
+        $('html,body').animate({scrollTop: 0}, 'slow');
+    });
+
+
+    /*关于模态框*/
+    $(document).on('focus', '.modal-box input,.modal-box textarea', function () {
+        $(this).addClass('blue');
+    });
+    $(document).on('blur', '.modal-box input,.modal-box textarea', function () {
+        $(this).removeClass('blue');
+    });
+
+    //行业软件服务-点击试用申请
+    $(document).on('click', '.software .apply-btn', function () {
+        localStorage.removeItem("tit");
+        var title = $(this).prev().html();
+        localStorage.setItem("tit", title);
+    });
+    //精益作业通-点击试用申请
+    $(document).on('click', '.cs-item-box .apply-btn', function () {
+        localStorage.removeItem("tit");
+        var title = document.getElementById('cs-jlw').innerHTML;
+        localStorage.setItem("tit", title);
+    });
+    //招聘申请-点击申请
+    $(document).on('click', '.z-table .apply-btn', function () {
+        localStorage.removeItem("applyJob");
+        var applyJob = $(this).closest("tr").find("td:eq(0)").text();
+        localStorage.setItem("applyJob", applyJob);
+    });
+    $(document).on('click', '.modal-recruitment-choice .rc-cont.rc-zxsq', function (e) {
+        e.stopPropagation();
+        $('#popdown-dialog').empty();
+        $("#popdown-dialog").load("html/modal/recruitment_apply_form.html");
+    });
+    $(document).on('click', '.modal-recruitment-choice .rc-cont.rc-zjtd', function (e) {
+        e.stopPropagation();
+        $('#popdown-dialog').empty();
+        $("#popdown-dialog").load("html/modal/upload_accessory.html");
+    });
+
+
+    $(document).on('click', '.show-modal', function () {
+        $(this).popdown();
+    });
+
+
+    $(document).on('focus', '.modal-box input,.modal-box textarea', function () {
+        $(this).removeClass('red').addClass('blue');
+        $(this).parent().children('span').hide();
+    });
+    //试用申请表提交
+    $(document).on('click', '.modal-box .form-submit', function () {
+        var btn = $(this)[0];
+        if ($(this).hasClass("resume-form-btn")) {
+            submitEmail(btn, 2);
+        } else {
+            submitEmail(btn, 1);
+        }
+    });
+    $(document).on('click', '.modal-box .resubmit', function () {
+        ajaxEmail();
+    });
+
+    function submitEmail(btn, origin) {
+        if (origin == 1) {
+            //产品试用表单
+            var softName = document.getElementById('softName').innerHTML;
+            var personName = document.getElementById('personName').value;
+            var qq = document.getElementById('qq').value;
+            var businessName = document.getElementById('businessName').value;
+            var businessAddress = document.getElementById('businessAddress').value;
+            var phone = document.getElementById('phone').value;
+            var email = document.getElementById('email').value;
+            var verificationCode = document.getElementById('verificationCode').value;
+        }
+
+        if (origin == 2) {
+            //招聘表单
+            var applyJob = $("#applyJob").text();
+            var arrivalDate = $("#arrivalDate").val();
+            var name = $("#name").val();
+            var sex = $('input:radio[name="sex"]:checked').val();
+            var nativePlace = $("#nativePlace").val();
+            var currentAddress = $("#currentAddress").val();
+            var email = $("#email").val();
+            var phone = $("#phone").val();
+            var qq = $("#qq").val();
+            var graduateSchool = $("#graduateSchool").val();
+            var universityDegree = $("#universityDegree").val();
+            var major = $("#major").val();
+            var graduationDate = $("#graduationDate").val();
+            var englishLevel = $("#englishLevel").val();
+            var computerLevel = $("#computerLevel").val();
+            var certificate = $("#certificate").val();
+            var associationActivity = $("#associationActivity").val();
+            var practiceExperience = $("#practiceExperience").val();
+            var hobbies = $("#hobbies").val();
+            var selfEvaluation = $("#selfEvaluation").val();
+        }
+        var flag = true;
+
+        $('.require').each(function (index) {
+            if ($(this).val() == '' || undefined) {
+                $(this).addClass('red');
+                $(this).parent().children('span').show();
+                flag = false;
+            }
+        });
+
+        if (!((/^1[34578]\d{9}$/.test(phone)) || (/^((0\d{2,3})-)(\d{7,8})$/.test(phone))) && phone.length > 0) {
+            $('#phone').addClass('red');
+            $('.phone span').show();
+            $('.phone .prompt').text("手机号码格式错误");
+            flag = false;
+        }
+
+        if (!( /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email)) && email.length > 0) {
+            $('#email').addClass('red');
+            $('.email span').show();
+            $('.email .prompt').text("邮箱格式错误");
+            flag = false;
+        }
+
+        //判断验证码
+        if (origin == 1 && $.trim(verificationCode.toUpperCase()) != localStorage.getItem("checkcode") && verificationCode.length > 0) { //若输入的验证码与产生的验证码不一致时
+            $('#verificationCode').addClass('red');
+            $('.verificationCode span').show();
+            $('.verificationCode .prompt').text("验证码错误");
+            flag = false;
+            createCode(); //刷新验证码         
+        }
+
+        var url, postData;
+        var formData = new FormData();
+        if (origin == 1) {
+            formData.append('productFrom', 'PC');
+            formData.append('systemName', softName);
+            formData.append('name', personName);
+            formData.append('qqWechat', qq);
+            formData.append('unit', businessName);
+            formData.append('unitAddress', businessAddress);
+            formData.append('phone', phone);
+            formData.append('email', email);
+
+            postData = formData;
+            url = "../admin/data/productApply/productApplyAction.php?method=addProductApply";
+        }
+        if (origin == 2) {
+            var fileObj = document.getElementById("fileImg").files[0]; // js 获取文件对象
+            // if (typeof (fileObj) == "undefined" || fileObj.size <= 0) {
+            //     alert("请选择文件");
+            //     return;
+            // }
+            formData.append("action", "UploadVMKImagePath");
+            formData.append("file", fileObj); //加入文件对象
+            formData.append('recruitFrom', 'PC');
+            formData.append('position', applyJob);
+            formData.append('workDate', name);
+            formData.append('name', 'PC');
+            formData.append('sex', sex);
+            formData.append('nativePlace', currentAddress);
+            formData.append('email', email);
+            formData.append('phone', phone);
+            formData.append('qq', qq);
+            formData.append('school', graduateSchool);
+            formData.append('education', universityDegree);
+            formData.append('major', major);
+            formData.append('graduationDate', graduationDate);
+            formData.append('englishLevel', englishLevel);
+            formData.append('computerLevel', computerLevel);
+            formData.append('certificate', certificate);
+            formData.append('associationActivity', associationActivity);
+            formData.append('practiceExperience', practiceExperience);
+            formData.append('hobbies', hobbies);
+            formData.append('selfEvaluation', selfEvaluation);
+
+            postData = formData;
+            url = "../admin/data/recruitApply/recruitApplyAction.php?method=addRecruitApply";
+        }
+        if (flag) {
+            ajaxEmail(btn, url, postData);
+        }
+    }
+
+    function ajaxEmail(btn, url, data) {
+        //检查 按钮是否被锁住，锁住直接return
+        if (btn.getAttribute('lock')) {
+            return;
+        }
+        //上锁
+        btn.setAttribute('lock', 1);
+
+        //更改状态
+        var count = 0;
+        btn.innerText = '提交中... (' + count + ' s)';
+        var countdown = setInterval(CountDown, 1000);
+
+        function CountDown() {
+            count++;
+            btn.innerText = '提交中... (' + count + ' s)';
+        }
+
+        function submitOver() {
+            //请求成功解锁
+            btn.setAttribute('lock', "");
+            //还原状态
+            btn.innerText = '提交';
+            count = 0;
+            clearInterval(countdown);
+        }
+
+        $.ajax({
+            type: 'post',
+            data: data,
+            dataType: "json",
+            url: url,
+            processData: false,
+            contentType: false,
+            cache: false,
+            timeout: 30000,
+            success: function (data) {
+                if (data.success) {
+                    $("#popdown-dialog").load("html/modal/success1.html");
+                    submitOver();
+                } else {
+                    $("#popdown-dialog").load("html/modal/failure.html");
+                    submitOver();
+                }
+            }, error: function () {
+                $("#popdown-dialog").load("html/modal/failure.html");
+                submitOver();
+            }
+        });
+    }
+
+    //动漫
+    var a, b, c;
+    a = $(window).height();
+    $(window).scroll(function () {
+        var b = $(this).scrollTop();
+        $(".wb-animation-scroll li").each(function () {
+            c = $(this).offset().top;
+            if (a + b + 150 > c) {
+                $(this).addClass("move");
+            }
+            else {
+                $(this).removeClass("move");
+            }
+        });
+    });
+
+});

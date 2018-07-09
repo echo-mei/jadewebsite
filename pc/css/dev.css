@@ -1,0 +1,36 @@
+.development{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.development img{width:100%;}
+
+.business-partners{
+    width: 910px;
+    margin: 0 auto 70px auto;
+}
+
+.business-partners .imgs{
+    width: 100%;
+    padding:20px 0 0 40px;
+}
+.business-partners .imgs img{
+    width: 250px;
+    height: 100px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+}
+
+.team-work p{
+    font-size: 24px;
+    color: #017ae3;
+    height: 120px;
+    line-height: 120px;
+}
+.team-work img{
+    display: block;
+    margin: 0 auto;
+    width:650px;
+}
+.team-work:last-child{
+    margin-bottom: 48px;
+}

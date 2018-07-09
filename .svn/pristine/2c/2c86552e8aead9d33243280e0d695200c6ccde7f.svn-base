@@ -1,0 +1,32 @@
+<!--关于我们-公司介绍-->
+<div class="aboutus">
+     <h1 class="main-right-title">公司介绍</h1>
+     <div>
+         <h3><img src="img/pic/square.png">企业愿景</h3>
+         <p><img src="img/pic/aboutus_yj.png"></p>
+     </div>
+     <div>
+         <h3><img src="img/pic/square.png">企业理念</h3>
+         <p><img src="img/pic/aboutus_rj.png"></p>
+         <p>实现客户、公司、员工、社会多赢</p>
+     </div>
+     <div>
+         <h3><img src="img/pic/square.png">企业文化</h3>
+         <p>先做人，再做事</p>
+         <p>客户的成功，才是我们的成功</p>
+         <p>企业为员工的发展创造机会，员工为企业的发展提供动力</p>
+         <p>现代化企业管理，提倡团队、创新、竞争</p>
+     </div>
+     <div class="last-div">
+         <h3><img src="img/pic/square.png">我们团队</h3>
+         <p>一群有志于软件服务的专业人才，在中国深圳开创了嘉德永丰，在我们中间有：</p>
+         <ul>
+             <li>千万元级软件开发项目的领军人物</li>
+             <li>美国归来的管理专才和软件专家</li>
+             <li>十几年软件开发经验的项目经理和系统架构师</li>
+             <li>政府、医疗、教育、金融、航空、电信&amp;广电、物流、零售、CRM、制造业等行业专家</li>
+         </ul>
+     </div>
+</div>
+
+

@@ -1,0 +1,24 @@
+<!--商务合作-->
+<div class="container">
+    <div class="banner">
+        <img src="img/pic/business_banner.jpg" alt="">
+    </div>
+    <div class="main">
+        <div class="main-wrap">
+            <div class="main-left-nav">
+                <ul>
+                    <h5>商务合作</h5>
+                    <li name="business_cooperation" class="active">
+                        <i></i>
+                        <span>商务合作</span>
+                    </li>
+                    <li name="business_partners">
+                        <i></i>
+                        <span>商务伙伴</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-right" id="main-right"></div>
+        </div>
+    </div>
+</div>

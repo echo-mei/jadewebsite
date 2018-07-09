@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>深圳市嘉德永丰开发科技股份有限公司</title>
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta http-equiv=Content-Type content="text/html;" />
+    <meta content="软件开发，系统集成，云服务，应用软件开发，行业软件开发，软件资源外包，教学管理，企业移动管理，供应链质量管理，政府OA" name="keywords" />
+    <meta name="description" content="中国领先的应用软件服务供应商，千万元级软件开发项目的领军人物，美国归来的管理专才和软件专家，十几年软件开发经验的项目经理和系统架构师，政府、医疗、教育、金融、航空、电信&广电、物流、零售、CRM、制造业等行业专家" />
+    <meta content="版权所有:深圳市嘉德永丰开发科技股份有限公司" name="copyright" />
+    <meta content="MSHTML 6.00.2900.3492" name="GENERATOR" />
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="favicon.ico" type="image/x-icon" />
+
+    <script src="js/font_size_autoAdapt.js"></script>
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+<div class="navbar-top" id="navbarTop">
+    <div class="navbar-header clearfix">
+        <a class="navbar-logo" href="#"><img src="images/navbar_top_logo.png"></a>
+        <button type="button" class="navbar-toggle"></button>
+    </div>
+</div>
+<div class="navbar-menu-wrap" id="navbarMenu">
+    <span class="navbar-menu-close">×</span>
+    <ul class="navbar-menu">
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a class="dropdown" href="#coreproducts">公司资讯</a>
+            <ul>
+                <li><a href="html/about_us.html">关于我们</a></li>
+                <li><a href="html/company_advantage.html">公司优势</a></li>
+                <li><a href="html/successful_case.html">成功案例</a></li>
+                <li><a href="html/business_cooperation.html">商务合作</a></li>
+                <li><a href="html/service_network.html">服务网络</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="dropdown" href="#coreproducts">产品服务</a>
+            <ul>
+                <li><a href="html/cloud_service.html">云服务</a></li>
+                <li><a href="html/software_hyrjkf.html">行业软件服务</a></li>
+                <li><a href="html/software_yyrjkf.html">应用软件开发</a></li>
+                <li><a href="html/software_rjzywb.html">软件资源外包</a></li>
+                <li><a href="html/apply_try_form.html">产品试用申请表</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="html/join_us.html">加入我们</a>
+        </li>
+    </ul>
+</div>
+
+<div class="index-main">
+    <!--banner-->
+    <div class="banner banner-slider" id="slider">
+        <ul>
+            <li><img src="images/index_banner01.png" alt=""></li>
+            <!--<li><img src="images/index_banner02.png" alt=""></li>-->
+            <!--<li><img src="images/index_banner03.jpg" alt=""></li>-->
+        </ul>
+    </div>
+
+    <div class="tabList clearfix">
+        <!--软件服务-->
+        <div class="tabList-item index-rjfw">
+            <h2 class="item-title">软件服务</h2>
+            <div class="item-text-img">
+                <img  src="images/index_rjfw1.png">
+                <div class="item-text">
+                    <h3>云服务</h3>
+                    <p>通过云平台、移动互联和大数据技术提供高性价比的SaaS软件服务</p>
+                </div>
+            </div>
+            <div class="item-text-img">
+                <img  src="images/index_rjfw2.png">
+                <div class="item-text">
+                    <h3>行业软件开发</h3>
+                    <p>国内领先的政府、医疗、教育、金融、电信、物流等行业的解决方案</p>
+                </div>
+            </div>
+            <div class="item-text-img">
+                <img  src="images/index_rjfw3.png">
+                <div class="item-text">
+                    <h3>应用软件开发</h3>
+                    <p>本地的价格获得国际水准的应用软件开发服务</p>
+                </div>
+            </div>
+            <div class="item-text-img">
+                <img  src="images/index_rjfw4.png">
+                <div class="item-text">
+                    <h3>软件资源外包</h3>
+                    <p>提供经过规范项目实践的软件开发人员</p>
+                </div>
+            </div>
+        </div>
+        <!--公司优势-->
+        <div class="tabList-item index-gsys">
+            <h2 class="item-title">公司优势</h2>
+            <div class="item-text">
+                <p class="item-desc">领先适用的行业解决方案</p>
+                <p class="item-desc-gray">领先适用的设计理念</p>
+                <p class="item-desc-gray">全面实用的业务功能</p>
+                <p class="item-desc-gray">可靠成熟的行业实践</p>
+            </div>
+            <div class="item-text">
+                <p class="item-desc">迭代开发的项目管理</p>
+                <p class="item-desc-gray">易于与最终用户交流，可以有效控制需求误差</p>
+                <p class="item-desc-gray">易于适应业务发展和变化</p>
+                <p class="item-desc-gray">易于项目控制，极大减少项目风险</p>
+            </div>
+            <div class="item-text">
+                <p class="item-desc">高性价比的人力资源</p>
+                <p class="item-desc-gray">在规范化管理的项目中开发实践</p>
+                <p class="item-desc-gray">主流开发架构和平台的开发技能</p>
+                <p class="item-desc-gray">切身体会的团队合作精神</p>
+            </div>
+        </div>
+        <!--商务合作-->
+        <div class="tabList-item index-swhz">
+            <h2 class="item-title">商务合作</h2>
+            <p class="item-desc">领先的软件产品/服务</p>
+            <p class="item-desc">高性价比的软件开发</p>
+            <p class="item-desc">增值的顾问服务</p>
+            <p class="item-desc">长期的客户关系</p>
+        </div>
+    </div>
+
+</div>
+
+<p class="copyright">Copyright 2017 © JadeFortune Technology All rights reserved</p>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/unslider.min.js"></script>
+<script src="js/wechat.js"></script>
+<script>
+    $(function () {
+        // 默认导入首页内容
+        setTimeout(function(){
+            loadIndexPage();
+        },10);
+        //导入首页轮播图图片部分
+        function loadIndexPage() {
+            var html ='<li><img src="images/index_banner02.png" alt=""></li> ' +
+                '<li><img src="images/index_banner03.jpg" alt=""></li>';
+
+            $('#slider ul').append(html);
+            $('#slider').unslider({
+                dots: true
+            });
+        }
+    });
+</script>
+</body>
+
+</html>

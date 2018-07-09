@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>幸福教育论坛邀请函</title>
+    <script src="../js/font_size_autoAdapt.js"></script>
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+<div class="navbar-top" id="navbarTop">
+    <div class="navbar-header clearfix">
+        
+        <!-- <div style="height:2.5em;width:2.5em;padding:0.25em">
+            <a href="meetingform.html">
+
+                <img src="../images/homework_blue.png" style="max-width:100%">
+            </a>
+                
+        </div> -->
+
+
+
+        <!-- <div style="background:firebrick;border:solid blue 5px; padding:10%" > -->
+
+        <!-- </div> -->
+        <a class="navbar-logo" href="meetingform.html"><img src="../images/homework_blue.png" ></a>
+        <!-- <button type="button" class="navbar-toggle"></button> -->
+    </div>
+</div>
+<!-- <div class="navbar-menu-wrap" id="navbarMenu">
+    <span class="navbar-menu-close">×</span>
+    <ul class="navbar-menu">
+        <li>
+            <a href="advice.html">用户建议</a>
+        </li>
+        <li>
+                <a href="complaint.html">用户投诉</a>
+        </li>
+    </ul>
+</div> -->
+
+<div class="index-main" style="padding:2.5rem 1rem 4rem 1rem">
+    <div class="tabList-item " style="margin-bottom:0rem" >
+        <h3 class="item-title" >“为孩子打开幸福之门”幸福教育论坛邀请函</h3>
+    </div>
+    <div style="color:#333333;font-size:0.625rem;line-height:1rem">
+        <p>
+        教育的本质是为了人生的幸福，学生当下幸福和全人生幸福最重要。经南山区教育局、南山区政府审批，深圳市南山区第二外国语集团学府中学与“全人生幸福教育联盟”共同举办“为孩子打开幸福之门”研讨会，一起分享幸福教育经验，思考幸福教育方向，解答幸福教育困惑，研究提升师生及家长幸福感的策略与方法。
+        </p>
+        <div style="text-align:center">
+            <img src="../images/xuefu.png" style="max-width:100%; padding:0.5rem " alt="happy"> 
+        </div>
+        <div style="text-align:center"> 
+            
+            <img src="../images/huafu1.png" style="max-width:50%" >
+        </div>
+
+        <h4>
+            一、会议主题
+        </h4>
+        
+        <p >
+                “为孩子打开幸福之门”——幸福教育论坛、幸福课堂展示。
+        </p>
+        <h4>
+                二、 组织单位：
+        </h4>
+        <p>
+                深圳市南山区第二外国语集团学府中学、全人生幸福教育联盟
+        </p>
+        <h4>
+                三、 会议时间、地点：
+        </h4>
+        <p>
+            2018 年 4 月 26 日、27 日，深圳市南山区第二外国语集团学府中学。
+        </p>
+        <h4>
+                四、参会人员：
+        </h4>
+        <p>
+                幸福教育实践研究的各学校校长、教师及教育理论研究专家、教育行政领导等。
+        </p>
+        <h4>
+                五、 会务提醒：
+        </h4>
+        <p>
+                本次研讨会采用邀请制，邀请全国心理教育和幸福教育的知名专家做主题演讲、主题分享及课堂展示，诚邀联盟各成员单位派人参会。因为活动规模限制，每单位限报 1 名校级领导和 2-3 名教师。
+        </p>
+        <h4>
+                六、 会议程序：
+        </h4>
+        <div>
+            <table id="table_meeting">
+                   <thead>
+                       <tr>
+                           <th style="min-width:2rem;">日期</th>
+                           <th style="min-width:3rem">会议内容</th>
+                           <th style="min-width:2rem;">时间</th>
+                           <th style="min-width:2rem;">地点</th>
+                           <th style="min-width:4rem">内容</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <!-- 26上午 -->
+                       <tr>
+                           <td rowspan="4">4<br>月<br>26<br>日<br>上<br>午</td>
+                           <td>开幕式</td>
+                           <td>8:00-9:00</td>
+                           <td rowspan="25" style="line-height:3rem">学<br>府<br>中<br>学<br>幸<br>福<br>大<br>讲<br>堂</td>
+                           <td>主持人介绍嘉宾</td>
+                       </tr>
+                       <tr>
+                           <td rowspan="3">小学观摩课</td>
+                           <td> 09:15-09:55</td>
+                           <td>小学展示课1</td>
+                       </tr>
+                       <tr>
+                           <td>10:10-10:50</td>
+                           <td>小学展示课2</td>
+                       </tr>
+                       <tr>
+                           <td>
+                               11:05-11:50
+                           </td>
+                           <td>
+                               小学展示课3
+                           </td>
+                       </tr>
+                       <!-- 26下午 -->
+                       <tr>
+                           <td rowspan="9">4<br>月<br>26<br>日<br>下<br>午</td>
+                           <td >幸福课堂<br>点评</td>
+                           <td>14:20-14:40</td>
+                           <td>专家课堂评点</td>
+                       </tr>
+                       <tr>
+                           <td rowspan="8">幸福主题<br>报告与分享</td>
+                           <td>14:40-15:20</td>
+                           <td>主题报告1</td>
+                       </tr>
+                       <tr>
+                            <td>15:20-15:40</td>
+                            <td>主题分享2</td>
+                       </tr>
+                       <tr>
+                            <td>15:40-16:00</td>
+                            <td>主题分享3</td>
+                       </tr>
+                       <tr>
+                            <td>16:00-16:20</td>
+                            <td>主题分享4</td>
+                       </tr>
+                       <tr>
+                            <td>16:20-16:40</td>
+                            <td>主题分享5</td>
+                       </tr>
+                       <tr>
+                            <td>16:40-17:00</td>
+                            <td>主题分享6</td>
+                       </tr>
+                       <tr>
+                            <td>17:00-17:20</td>
+                            <td>主题分享7</td>
+                       </tr>
+                       <tr>
+                            <td>17:20-17:40</td>
+                            <td>主题分享8</td>
+                       </tr>
+                       <!-- 27上午 -->
+                       <tr>
+                           <td rowspan="3">4<br>月<br>27<br>日<br>上<br>午</td>
+                           <td rowspan="3">中学观摩课</td>
+                           <td>09:15-09:55</td>
+                           <td>中学展示课1</td>
+                       </tr>
+                       <tr>
+                            <td>10:10-10:50</td>
+                            <td>中学展示课2</td>
+                       </tr>
+                       <tr>
+                            <td>11:05-11:50</td>
+                            <td>中学展示课3</td>
+                       </tr>
+                       <!-- 27下午 -->
+                       <tr>
+                            <td rowspan="9">4<br>月<br>27<br>日<br>下<br>午</td>
+                            <td >幸福课堂<br>点评</td>
+                            <td>14:20-14:40</td>
+                            <td>专家课堂评点</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="8">幸福主题<br>报告与分享</td>
+                            <td>14:40-15:20</td>
+                            <td>主题报告9</td>
+                        </tr>
+                        <tr>
+                             <td>15:20-15:40</td>
+                             <td>主题分享10</td>
+                        </tr>
+                        <tr>
+                             <td>15:40-16:00</td>
+                             <td>主题分享11</td>
+                        </tr>
+                        <tr>
+                             <td>16:00-16:20</td>
+                             <td>主题分享12</td>
+                        </tr>
+                        <tr>
+                             <td>16:40-16:00</td>
+                             <td>主题分享13</td>
+                        </tr>
+                        <tr>
+                             <td>17:00-17:20</td>
+                             <td>主题分享14</td>
+                        </tr>
+                        <tr>
+                             <td>17:20-17:40</td>
+                             <td>主题分享15</td>
+                        </tr>
+                        <tr>
+                             <td>17:40-18:00</td>
+                             <td>大会闭幕式</td>
+                        </tr>
+                   </tbody>
+            </table>
+        </div>
+        <h4>
+                七、报名方法：
+        </h4>
+        <p>
+                于 4 月 16 日前，把回执发送到指定邮箱。
+                <br>&emsp;&emsp;联系人：邹忆玲老师
+                <br>&emsp;&emsp;邮箱：526049273@qq.com 
+                <br>&emsp;&emsp;电话：18603044779
+                <br>&emsp;&emsp;或联系人：向仕龙老师 
+                <br>&emsp;&emsp;电话：13826526243
+        </p>
+        <h4>
+                八、外地老师食宿：
+        </h4>
+        <p>
+            本次活动不收费用，交通、食宿等费用回原单位报销，会务协议食宿酒店如下：
+            <div class="font12">
+                1.住宿，新桃园酒店（海岸城店）或蓬客精品酒店（海岸城店）请自行联系预约。<br>
+                2.用餐可以在新桃园酒店、蓬客精品酒店或海岸城商圈。
+            </div>
+        </p>
+        <h4>
+                九、学府中学和新桃园酒店地址:
+        </h4>
+        <p>
+                1、学府中学：深圳市南山区商业文化中心区海德一道113号。地铁 2 号线后海站E2出口前行700米左右即到；或公交站：海岸城站前行300米左右。
+                <br>&emsp;&emsp;联系人：邹忆玲老师
+                <br>&emsp;&emsp;联系电话：18603044779
+                <br>&emsp;&emsp;或 联系人：向仕龙老师 
+                <br>&emsp;&emsp;电话：13826526243
+        </p>
+        <div style="text-align:right;padding-right:1rem;padding-top:2rem;padding-bottom:2rem">
+             <p>
+                 深圳市南山区学府中学
+            </p> 
+            <p style="padding-right:0.5rem">
+                2018 年 3 月 26 日
+            </p>
+
+        </div>
+        <div id="mapdiv">
+            
+            <p>附：<br>1.学府中学地图</p>
+            <img src="../images/map_xuefu.png"  alt="学府中学地图位置">
+            <p >2.新桃园酒店地址：广东省深圳市南山区文心五路海岸城大厦东座</p>
+            <img src="../images/map_xintaoyuan1.png"  alt="新桃园酒店地图位置">
+            <p >3.蓬客酒店（海岸城）地址：深圳市南山区电力花园首层</p>
+            <img src="../images/map_pengke1.png"  alt="蓬客酒店地图位置">
+        </div>
+       
+    </div>
+ 
+</div>
+<div style="position: fixed;bottom: 0%;background:white;width:100%;padding:0 1rem 0.5rem 1rem">
+    <button  id="meetingBtn" onclick="window.location.href='meetingform.html'"  >参加会议</button>
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/wechat.js"></script>
+
+</body>
+</html>

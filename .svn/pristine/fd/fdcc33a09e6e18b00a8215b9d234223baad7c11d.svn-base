@@ -1,0 +1,147 @@
+<!--云服务-->
+<div class="container">
+    <div class="banner">
+        <img src="img/pic/cloud_banner.jpg" alt="">
+    </div>
+    <div class="main">
+        <div class="main-wrap">
+            <div class="main-left-nav">
+                <ul>
+                    <h5>云服务</h5>
+                    <li class="active" myAttr="cs-jlw">
+                        <a href="#cs-jlw">
+                            <i></i>
+                            <span>精益作业通云服务</span>
+                        </a>
+                    </li>
+                    <li myAttr="cs-yy">
+                        <a href="#cs-yy">
+                            <i></i>
+                            <span>学校教学管理云服务</span>
+                        </a>
+                    </li>
+                    <li myAttr="cs-yff">
+                        <a href="#cs-yff">
+                            <i></i>
+                            <span>供应链质量管理云服务</span>
+                        </a>
+                    </li>
+                    <li myAttr="cs-yyy">
+                        <a href="#cs-yyy">
+                            <i></i>
+                            <span>企业移动管理云服务</span>
+                        </a>
+                    </li>
+                    <li myAttr="cs-OAyy">
+                        <a href="#cs-OAyy">
+                            <i></i>
+                            <span>政府OA云服务</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-right">
+                <div class="cs-main">
+                
+                  <!--精益作业通云服务-->
+                    <div class="cs-item-box cs-picture-left">                       
+                        <h1 class="main-right-title title" id="cs-jlw">精益作业通云服务</h1>    
+                        <div class="cs-img-left cs-img-left">
+                            <img src="img/pic/cloud_jlw.png" class="cs-img-jlw" alt="">
+                        </div>
+                        <div class="cs-character-right">
+                            <div class="cs-character-rc">                              
+                                <div class="cs-height30"></div>                        
+                                <div class="cs-cr-content">
+                                    精益作业通是面向中小学现有纸质作业模式，有效提高作业质量和作业效率的云服务。通过管理作业全过程：做、批、改、问，适时帮扶学生，实现学生作业的即做即批即改，及时反思，帮助学生养成良好的学习方法和学习习惯；同时，大量减少教师的作业批阅工作量，使教师专注于作业的查、评、交流和跟踪。有效提高学生作业练习效果和学习成绩。                               
+                                </div> 
+                                <span href="html/modal/try_apply_form1.html" class="apply-btn show-modal">申请试用</span>                            
+                            </div>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    
+                    <!--学校教学管理云应用（iSTL）-->
+                    <div class="cs-item-box cs-picture-right"> 
+                    	<h1 class="main-right-title" id="cs-yy">学校教学管理云服务</h1>
+                        <div class="cs-height30"></div>
+                        <div class="cs-img-left cs-img-left">
+                            <div class="cs-character-rc">
+                                <div class="cs-height30"></div>
+                                <div class="cs-height50"></div>
+                                <div class="cs-cr-content cs-text-align-left">
+                                    通过云模式，为中小学提供校历管理、课程管理、课表管理、备课管理、教研管理、学习管理、作业管理、成绩管理、考勤管理、事件管理、奖惩管理等与教学活动有关的管理功能及其之上的教师考评、成绩簿和教学分析，并提供校长信息平台、教职工工作平台和家长/学生信息平台，全面提升学校的教学活动管理水平和教学质量。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cs-character-right cs-img-width">
+                            <img src="img/pic/cloud_istl.png" class="cs-img-pps" alt="">
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    
+                    
+                    <!--供应链质量管理云服务（iSCQ）-->
+                    <div class="cs-item-box cs-picture-left">                       
+                        <h1 class="main-right-title" id="cs-yff">供应链质量管理云服务</h1>    
+                        <div class="cs-img-left cs-img-left">
+                            <img src="img/pic/cloud_iscq.png" class="cs-img-pps" alt="">
+                        </div>
+                        <div class="cs-character-right">
+                            <div class="cs-character-rc">
+                                <div class="cs-height50"></div>
+                                <div class="cs-height30"></div>
+                                <div class="cs-height30"></div>
+                                <div class="cs-cr-content">
+                                    通过云模式、移动互联和大数据技术，为制造业供应链的品牌商、代工厂和供应商提供各环节交付物的质量、时效和追溯的品质管理，全面提升整个供应链交付物的品质。
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    
+                    <!--企业移动管理云应用（iManage）-->
+                    <div class="cs-item-box cs-picture-right">                      
+                        <h1 class="main-right-title" id="cs-yyy">企业移动管理云服务</h1>
+                        <div class="cs-img-left cs-img-left">
+                            <div class="cs-character-rc">
+                                <div class="cs-height30"></div>
+                                <div class="cs-height10"></div>
+                                <div class="cs-height50"></div>
+                                <div class="cs-cr-content cs-text-align-left">
+                                    通过云模式和移动互联方式，高性价比地为企业提供内部安全事件管理、锐器管理、差旅安排、宿舍管理、管理报表等管理服务。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cs-character-right cs-img-width">
+                            <img src="img/pic/cloud_imanage.png" class="cs-img-pps" alt="">
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+
+                    <!--政府OA云应用（iOA）-->
+                    <div class="cs-item-box cs-picture-left">
+                        <h1 class="main-right-title" id="cs-OAyy">政府OA云服务</h1>
+                        <div class="cs-img-left cs-img-left">
+                            <img src="img/pic/cloud_ioa.png" class="cs-img-pps" alt="">
+                        </div>
+                        <div class="cs-character-right">
+                            <div class="cs-character-rc">
+                                <div class="cs-height30"></div>
+                                <div class="cs-height10"></div>
+                                <div class="cs-height10"></div>
+                                <div class="cs-cr-content">
+                                    基于政务云平台，应用云平台和大数据技术，为一级政府（市/区县的）或垂直管理部门（工商/税务等）的数十上百单位提供办公自动化服务，通过协同办公平台，支持跨单位的公文交换、协同办文和协同办会（可追踪跨单位办文）。形成高效科学的办公办文管理体系，提高整个政府的办文办公效率与行政管理水平。
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                   
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+</div>

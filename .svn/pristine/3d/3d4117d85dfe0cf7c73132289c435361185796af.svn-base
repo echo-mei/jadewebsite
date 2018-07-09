@@ -1,0 +1,32 @@
+<!--软件服务-行业软件开发-->
+<div class="container">
+    <div class="banner">
+        <img src="img/pic/software_banner.jpg">
+    </div>
+    <div class="main">
+        <div class="main-wrap">
+            <div class="main-left-nav">
+                <ul>
+                    <h5>软件服务</h5>
+                    <li name="software_service_hyrjkf" class="active">
+                        <i></i>
+                        <span>行业软件开发</span>
+                    </li>
+                    <li name="software_service_yyrjkf">
+                        <i></i>
+                        <span>应用软件开发</span>
+                    </li>
+                    <li name="software_service_rjzywb">
+                        <i></i>
+                        <span>软件资源外包</span>
+                    </li>
+                    <li name="software_service_yfw">
+                        <i></i>
+                        <span>SaaS云服务</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-right" id="main-right"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>深圳市嘉德永丰开发科技股份有限公司</title>
+    <meta http-equiv=Content-Type content="text/html;" />
+    <meta content="软件开发，系统集成，云服务，应用软件开发，行业软件开发，软件资源外包，教学管理，企业移动管理，供应链质量管理，政府OA" name="keywords" />
+    <meta name="description" content="中国领先的应用软件服务供应商，千万元级软件开发项目的领军人物，美国归来的管理专才和软件专家，十几年软件开发经验的项目经理和系统架构师，政府、医疗、教育、金融、航空、电信&广电、物流、零售、CRM、制造业等行业专家" />
+    <meta content="版权所有:深圳市嘉德永丰开发科技股份有限公司" name="copyright" />
+    <meta content="MSHTML 6.00.2900.3492" name="GENERATOR" />
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="bookmark" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/recruitment.css">
+    <link rel="stylesheet" href="css/dev.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/mobiscroll_date.css">
+</head>
+<script>
+window.history.back = function(){
+    return ;
+}
+</script>
+<body>
+<div class="header">
+    <div class="header-wrap">
+        <div class="logo">
+            <img src="img/pic/logo.png" alt="">
+        </div>
+        <div class="header-nav">
+            <ul class="header-nav-ul ul0 active">
+                <h5 name="home2">首页<i></i></h5>
+            </ul>
+            <ul class="header-nav-ul ul1">
+                <h5 name="about_us" subname="about_us_gsjs">关于我们<i></i></h5>
+                <li name="about_us" subname="about_us_gsjs">公司介绍</li>
+                <li name="about_us" subname="about_us_gsfz">公司发展</li>
+                <li name="about_us" subname="about_us_fwwl">服务网络</li>
+            </ul>
+            <ul class="header-nav-ul ul2">
+                <h5 name="software_service" subname="software_service_hyrjkf">软件服务<i></i></h5>
+                <li name="software_service" subname="software_service_hyrjkf">行业软件开发</li>
+                <li name="software_service" subname="software_service_yyrjkf">应用软件开发</li>
+                <li name="software_service" subname="software_service_rjzywb">软件资源外包</li>
+                <li name="software_service_yfw">SaaS云服务</li>
+            </ul>
+            <ul class="header-nav-ul ul3">
+                <h5 name="software_service_yfw">云服务<i></i></h5>  
+                <li myAttr="cs-jlw" name="software_service_yfw">精益作业通</li>           
+                <li myAttr="cs-yy" name="software_service_yfw">教学管理</li>
+                <li myAttr="cs-yff" name="software_service_yfw">质量管理</li>
+                <li myAttr="cs-yyy" name="software_service_yfw">移动管理</li>
+                <li myAttr="cs-OAyy" name="software_service_yfw">OA云</li>
+            </ul>        
+            <ul class="header-nav-ul ul4">
+                <h5 name="company_advantage">公司优势<i></i></h5>
+                <li myAttr="ca-cs" name="company_advantage" >领先适用</li>
+                <li myAttr="ca-dd" name="company_advantage">迭代开发</li>
+                <li myAttr="ca-style" name="company_advantage" >领域模型</li>
+                <li myAttr="ca-pt" name="company_advantage">开放平台</li>
+                <li myAttr="ca-gc" name="company_advantage" >规范过程</li>
+                <li myAttr="ca-rlzy" name="company_advantage">高性价比</li>
+            </ul>
+            <ul class="header-nav-ul ul5">
+                <h5 name="successful_case">成功案例<i></i></h5>
+                <li myAttr="government" name="successful_case" >政府</li>
+                <li myAttr="health" name="successful_case" >医疗</li>
+                <li myAttr="education" name="successful_case" >教育</li>
+                <li myAttr="finance" name="successful_case" >金融</li>
+                <li name="successful_case" >...</li>
+            </ul>
+            <ul class="header-nav-ul ul6">
+                <h5 name="business" subname="business_cooperation">商务合作<i></i></h5>
+                <li name="business" subname="business_cooperation">商务合作</li>
+                <li name="business" subname="business_partners">商务伙伴</li>
+            </ul>
+            <ul class="header-nav-ul ul7">
+                <h5 name="jion_us" subname="jion_us_ourteam">加入我们<i></i></h5>
+                <li name="jion_us" subname="jion_us_ourteam">我们团队</li>
+                <li name="jion_us" subname="jion_us_recruitment">招贤纳士</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="container">
+    <div class="banner banner-slider" id="slider">
+        <ul class="slider-ul">
+            <li name="software_service_yfw" myAttr="cs-jlw" headul="ul3"><img class='banner-img-1' src="img/pic/homepage_banner01.jpg" alt=""></li>
+            <!--<li name="software_service_hyrjkf" myAttr="hospital-sys" headul="ul2"><img src="img/pic/homepage_banner02.jpg" alt=""></li>
+            <li name="software_service_hyrjkf" myAttr="official-activity-sys" headul="ul2"><img src="img/pic/homepage_banner03.jpg" alt=""></li>
+            <li name="software_service_yfw" myAttr="compile-sys" headul="ul2"><img src="img/pic/homepage_banner04.jpg" alt=""></li>
+            <li name="software_service_yfw" myAttr="cs-yy" headul="ul3"><img src="img/pic/homepage_banner05.jpg" alt=""></li>-->
+        </ul>
+    </div>
+    <div class="main">
+        <div class="i-info-cont i-info-bg">
+            <div class="main-wrap">
+                <h1 class="i-info-title">软件服务</h1>
+                <ul class="img-text-updown i-software-service wb-animation clear">
+                    <li name="software_service_yfw" class="a-li1 move">
+                        <div class="it-img"><img src="img/pic/homepage_01.png" height="160" width="160"/></div>
+                        <div class="it-text">
+                            <h2 class="it-title">云服务</h2>
+                            <div class="it-line"></div>
+                            <p class="it-p">通过云平台、移动互联和大数据技术提供高性价比的SaaS软件服务</p>
+                            <a class="it-a">更多</a>
+                        </div>
+                    </li>
+                    <li name="software_service" subname="software_service_hyrjkf" headul="ul2" serialNum="0" class="a-li2 move">
+                        <div class="it-img"><img src="img/pic/homepage_02.png" height="160" width="160"/></div>
+                        <div class="it-text">
+                            <h2 class="it-title">行业软件开发</h2>
+                            <div class="it-line"></div>
+                            <p class="it-p">国内领先的政府、医疗、教育、金融、电信、物流等行业的解决方案</p>
+                            <a class="it-a">更多</a>
+                        </div>
+                    </li>
+                    <li name="software_service" subname="software_service_yyrjkf" headul="ul2" serialNum="1" class="a-li3 move">
+                        <div class="it-img"><img src="img/pic/homepage_03.png" height="160" width="160"/></div>
+                        <div class="it-text">
+                            <h2 class="it-title">应用软件开发</h2>
+                            <div class="it-line"></div>
+                            <p class="it-p">本地的价格获得国际水准的应用软件开发服务</p>
+                            <a class="it-a">更多</a>
+                        </div>
+                    </li>
+                    <li name="software_service" subname="software_service_rjzywb" headul="ul2" serialNum="2" class="mr0 a-li4 move">
+                        <div class="it-img"><img src="img/pic/homepage_04.png" height="160" width="160"/></div>
+                        <div class="it-text">
+                            <h2 class="it-title">软件资源外包</h2>
+                            <div class="it-line"></div>
+                            <p class="it-p">提供经过规范项目实践的软件开发人员</p>
+                            <a class="it-a">更多</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="i-info-cont">
+            <div class="main-wrap">
+                <h1 class="i-info-title">公司优势</h1>
+                <ul class="img-text-updown i-company-advantage wb-animation wb-animation-scroll clear">
+                    <li class="it-text a-li1">
+                        <div class="it-text-cont">
+                            <h2 class="it-title">领先适用的行业解决方案</h2>
+                            <p class="it-p">领先适用的设计理念<br>全面实用的业务功能<br>可靠成熟的行业实践</p>
+                        </div>
+                    </li>
+                    <li class="it-text a-li2">
+                        <div class="it-text-cont">
+                            <h2 class="it-title">迭代开发的项目管理</h2>
+                            <p class="it-p">易于与最终用户交流，可以有效控制需求误差<br>易于适应业务发展和变化<br>易于项目控制，极大减少项目风险</p>
+                        </div>
+                    </li>
+                    <li class="it-text a-li3 br0">
+                        <div class="it-text-cont">
+                            <h2 class="it-title">高性价比的人力资源</h2>
+                            <p class="it-p">在规范化管理的项目中的开发实践<br>主流开发架构和平台的开发技能<br>切身体会的团队合作精神</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="i-info-cont i-info-bg">
+            <div class="main-wrap">
+                <h1 class="i-info-title">商务合作</h1>
+                <ul class="img-text-updown i-business-partner wb-animation wb-animation-scroll clear">
+                    <li class="a-li1">
+                        <div class="it-img"><img src="img/pic/homepage_05.png" height="160" width="160"/></div>
+                        <div class="it-text">
+                            <h2 class="it-title">领先的软件产品/服务</h2>
+                        </div>
+                    </li>
+                    <li class="a-li2">
+                        <div class="it-img"><img src="img/pic/homepage_06.jpg" height="160" width="160"/></div>
+                        <div class="it-text">
+                            <h2 class="it-title">高性价比的软件开发</h2>
+                        </div>
+                    </li>
+                    <li class="a-li3">
+                        <div class="it-img"><img src="img/pic/homepage_07.jpg" height="160" width="160"/></div>
+                        <div class="it-text">
+                            <h2 class="it-title">增值的顾问服务</h2>
+                        </div>
+                    </li>
+                    <li class="a-li4 mr0">
+                        <div class="it-img"><img src="img/pic/homepage_08.png" height="160" width="160"/></div>
+                        <div class="it-text">
+                            <h2 class="it-title">长期的客户关系</h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="footer-wrap">
+        <div class="footer-uls">
+            <ul class="footer-ul" headul="ul1">
+                <h5 name="about_us" subname="about_us_gsjs">关于我们</h5>
+                <li name="about_us" subname="about_us_gsjs">公司介绍</li>
+                <li name="about_us" subname="about_us_gsfz">公司发展</li>
+                <li name="about_us" subname="about_us_fwwl">服务网络</li>
+            </ul>
+            <ul class="footer-ul" headul="ul2">
+                <h5 name="software_service" subname="software_service_hyrjkf">软件服务</h5>
+                <li name="software_service" subname="software_service_hyrjkf">行业软件开发</li>
+                <li name="software_service" subname="software_service_yyrjkf">应用软件开发</li>
+                <li name="software_service" subname="software_service_rjzywb">软件资源外包</li>
+                <li name="software_service_yfw">SaaS云服务</li>
+            </ul>
+            <ul class="footer-ul" headul="ul3">
+                <h5 name="software_service_yfw">云服务</h5>
+                <li myAttr="cs-jlw" name="software_service_yfw">精益作业通</li>  
+                <li myAttr="cs-yy" name="software_service_yfw" >教学管理</li>
+                <li myAttr="cs-yff" name="software_service_yfw">质量管理</li>
+                <li myAttr="cs-yyy" name="software_service_yfw" >移动管理</li>
+                <li myAttr="cs-OAyy" name="software_service_yfw">OA云</li>
+            </ul>
+            <ul class="footer-ul" headul="ul4">
+                <h5 name="company_advantage">公司优势</h5>
+                <li myAttr="ca-cs" name="company_advantage" >领先适用</li>
+                <li myAttr="ca-dd" name="company_advantage">迭代开发</li>
+                <li myAttr="ca-style" name="company_advantage" >领域模型</li>
+                <li myAttr="ca-pt" name="company_advantage">开放平台</li>
+                <li myAttr="ca-gc" name="company_advantage" >规范过程</li>
+                <li myAttr="ca-rlzy" name="company_advantage">高性价比</li>
+            </ul>
+            <ul class="footer-ul" headul="ul5">
+                <h5 name="successful_case">成功案例</h5>
+                <li myAttr="government" name="successful_case" >政府</li>
+                <li myAttr="health" name="successful_case" >医疗</li>
+                <li myAttr="education" name="successful_case" >教育</li>
+                <li myAttr="finance" name="successful_case" >金融</li>
+                <li name="successful_case" >...</li>
+            </ul>
+            <ul class="footer-ul" headul="ul6">
+                <h5 name="business" subname="business_cooperation">商务合作</h5>
+                <li name="business" subname="business_cooperation">商务合作</li>
+                <li name="business" subname="business_partners">商务伙伴</li>
+            </ul>
+            <ul class="footer-ul" headul="ul7">
+                <h5 name="jion_us" subname="jion_us_ourteam">加入我们</h5>
+                <li name="jion_us" subname="jion_us_ourteam">我们团队</li>
+                <li name="jion_us" subname="jion_us_recruitment">招贤纳士</li>
+            </ul>
+            <ul class="footer-ul contact-us">
+                <img src="img/pic/weixin.png" alt="">
+                <li class="text-center">关注微信</li>
+            </ul>
+            <ul class="footer-ul contact-us last">
+                <h5>联系我们</h5>
+                <li>电话（tel）: 86-755-8652 0770</li>
+                <li>传真（Fax）: 86-755-8652 0771</li>
+                <li>电邮 : <a class="email" href="mailto:company@jadefortune.com.cn">company@jadefortune.com.cn</a></li>
+                <li>
+                    <pre style="    font-family: microsoft yahei;">
+公司地址 : 深圳市南山区西丽街道新高路旺棠大
+                 厦6楼
+                    </pre>
+                </li>
+            </ul>
+            <div class="clear"></div>
+            <div class="copyright-notice">
+                <div class="copyright-notice-line"></div>
+                <dl class="dl-3">
+                    <dt>
+                        Copyright 2017 © JadeFortune Technology All rights reserved
+                    </dt>
+                    <dt>
+                        <a name="about_us_law" class="about-us-law">法律声明</a>
+                    </dt>
+                    <dt class="fr mr0">
+                        <a href="http://www.miitbeian.gov.cn/" target="_blank">
+                            粤ICP备06063907号-1
+                        </a>
+                    </dt>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<a class="to-top"></a>
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery_popdown.js"></script>
+<script src="js/jquery.toTop.min.js"></script>
+<script src="js/unslider.min.js"></script>
+<script src="js/scroll_right.js"></script>
+<script src="js/pages_load.js"></script>
+<script src="js/index.js"></script>
+<script src="js/check_code.js"></script>
+<script src="js/mobiscroll_date.js"></script>
+<script src="js/mobiscroll.js"></script>
+<script>
+	$(function(){
+		if (window.history && window.history.pushState) {
+            $(window).on('popstate', function () {
+　　　　　　/// 当点击浏览器的 后退和前进按钮 时才会被触发， 
+                window.history.pushState('forward', null, ''); 
+                window.history.forward(1);
+            });
+        }
+//
+        window.history.pushState('forward', null, '');  //在IE中必须得有这两行
+        window.history.forward(1);
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<div class="modal-box modal-form-submit">
+   <!-- <form id=""  method="post" name="" action="postEmail" > -->
+    <div class="md-header">
+        <h1>试用申请表<span class="required">*为必填项</span><span class="close-popdown md-close">×</span></h1>
+    </div>
+    <div class="md-body">
+        <table>
+            <tr>
+                <td>软件名称：</td>
+                <td id="softName"></td>
+            </tr>
+            <tr >
+                <td><span>*</span>申请人姓名：</td>
+                <td><input type="text" class="require" id="personName" />
+                    <span class="prompt">
+                       申请人姓名不能为空
+                    </span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+
+            </tr>
+            <!--<tr>-->
+                <!--<td>QQ/微信：</td>-->
+                <!--<td><input type="text" id="qq" /></td>-->
+            <!--</tr>-->
+            <tr>
+                <td><span>*</span>联系人电话：</td>
+                <td class="phone">
+                    <input type="text" id="phone" class="require" />
+                    <span class="prompt">
+                        联系电话不能为空
+                    </span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <!--<tr>-->
+                <!--<td><span>*</span>邮箱：</td>-->
+                <!--<td class="email">-->
+                    <!--<input type="text" id="email" class="require" />-->
+                    <!--<span class="prompt">-->
+                        <!--邮箱不能为空-->
+                    <!--</span>-->
+                    <!--<span class="triangle2"></span>-->
+                    <!--<span class="triangle1"></span>-->
+                <!--</td>-->
+            <!--</tr>-->
+            <tr>
+                <td>单位名称：</td>
+                <td>
+                    <input type="text" id="businessName" />
+                    <span class="prompt">
+                        单位名称不能为空
+                    </span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <!--<tr>-->
+                <!--<td><span>*</span>单位地址：</td>-->
+                <!--<td>-->
+                    <!--<input type="text"  class="require" id="businessAddress" />-->
+                    <!--<span class="prompt">-->
+                        <!--单位地址不能为空-->
+                    <!--</span>-->
+                    <!--<span class="triangle2"></span>-->
+                    <!--<span class="triangle1"></span>-->
+                <!--</td>-->
+            <!--</tr>-->
+             <tr>
+                <td><span>*</span>验证码：</td>
+                <td class="verificationCode">
+                    <input type="text"  class="require" id="verificationCode" />
+                    <a id="checkcode" onclick="createCode()"></a>
+                    <span class="prompt">
+                        验证码不能为空
+                    </span>
+                    <span class="triangle2"></span>
+                    <span class="triangle1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button  type="button" class="form-submit" id="sysTryForm-submit-btn">提交</button></td>
+            </tr>
+        </table>
+    </div>
+   <!-- </form> -->
+</div>
+
+<script> 
+    $(function(){
+
+        $(window).resize(function () {
+            var maxHeight = $(window).height() - $(".md-header").outerHeight(true) - $(".form-btn-wrap").outerHeight(true);
+            $(".md-body").css("max-height", maxHeight);
+            var marginTop = $(".modal-box").height();//调用多次？？
+            $(".modal-box").css("margin-top", -marginTop / 2);
+        }).resize();
+
+        var title = localStorage.getItem("tit");
+        if (title == "精益作业通云服务"){
+            $("#businessName").parent("td").prev().html("学校名称&nbsp;:&nbsp;");
+        }
+        $('#softName').html(title);
+        createCode();
+
+        //试用申请表提交
+        $(document).on('click', '.modal-box #sysTryForm-submit-btn', function () {
+            //产品试用表单
+            var softName = document.getElementById('softName').innerHTML,
+                personName = document.getElementById('personName').value,
+                businessName = document.getElementById('businessName').value,
+                phone = document.getElementById('phone').value,
+                verificationCode = document.getElementById('verificationCode').value,
+                flag = true,
+                formData = new FormData(),
+                postData,postUrl;
+
+            $('.require').each(function (index) {
+                if ($(this).val() == '' || undefined) {
+                    $(this).addClass('red');
+                    $(this).parent().children('span').show();
+                    flag = false;
+                }
+            });
+            if (!((/^1[34578]\d{9}$/.test(phone)) || (/^\d{3}-\d{7,8}|\d{4}-\d{7,8}$/.test(phone))) && phone.length > 0) {
+                $('#phone').addClass('red');
+                $('.phone span').show();
+                $('.phone .prompt').text("号码格式错误(固话请以-分隔,并加区号)");
+                flag = false;
+            }
+//            if (!( /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email)) && email.length > 0) {
+//                $('#email').addClass('red');
+//                $('.email span').show();
+//                $('.email .prompt').text("邮箱格式错误");
+//                flag = false;
+//            }
+            //判断验证码
+            if ( $.trim(verificationCode.toUpperCase()) != localStorage.getItem("checkcode") && verificationCode.length > 0) { //若输入的验证码与产生的验证码不一致时
+                $('#verificationCode').addClass('red');
+                $('.verificationCode span').show();
+                $('.verificationCode .prompt').text("验证码错误");
+                flag = false;
+                createCode(); //刷新验证码
+            }
+
+            if (!flag){
+                return;
+            }else {
+                formData.append('productFrom', 'PC');
+                formData.append('systemName', softName);
+                formData.append('name', personName);
+                formData.append('unit', businessName);
+                formData.append('phone', phone);
+
+                postData = formData;
+                postUrl = "../../admin/data/productApply/productApplyAction.php?method=addProductApply";
+
+                ajaxEmail($(this)[0], postUrl, postData);
+            }
+
+        });
+
+    })
+</script>
